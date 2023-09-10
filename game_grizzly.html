@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wayne Yip | Plasticity</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="headshot.ico">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">wayne<span id="lastname">yip</span></a>
+            </div>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown active">
+                        <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">
+                            Portfolio
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="videogames.html" class="dropdown-item">Games</a></li>
+                            <li><a href="tools.html" class="dropdown-item">Tools</a></li>
+                            <li><a href="software.html" class="dropdown-item">Web Apps</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page_title">
+    </div>
+    <div class="container-fluid content">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h2>Disney Melee Mania</h2>
+                <h4>A multiplayer 3v3 arena battler featuring over 20 Disney and Pixar characters, released on Apple Arcade.</h4>
+                <span class="nowrap"><img class="tech-icon" src="media/icon_platform.png"><h5 class="tech-text inline">iOS, macOS, tvOS</h5></span>
+                <span class="nowrap"><img class="tech-icon" src="media/icon_gear.png"><h5 class="tech-text inline">Unity (URP), Maya</h5></span>
+                <span class="nowrap"><img class="tech-icon" src="media/icon_people.png"><h5 class="tech-text inline">30+ members</h5></span>
+                <span class="nowrap"><img class="tech-icon" src="media/icon_clock.png"><h5 class="tech-text inline">1.5 years</h5></span> 
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-offset-2 col-md-4">
+                <div class="video">
+                    <img src="media/game_grizzly.png" class="img-responsive portfolio_img">
+                </div>
+            </div>
+            <div class="col-md-4 portfolio_entry">
+                <div class="portfolio_description">
+                    <p>As <b>Technical Artist</b>, I handled all things technical relating to the character art pipeline, and also worked on tools, shaders and optimisation.</p>
+                    <li>Managed outsourcers on delivery & iteration of 20+ Disney/Pixar character rigs.</li>
+                    <li>Collaborated with engineers on implementing 100+ character and camera anims.</li>
+                    <li>Developed Unity tools in C# for procedural generation of environment assets.</li>
+                    <li>Optimised performance on iOS from 20 FPS to 60 FPS through Xcode profiling.</li>
+                </div>
+                <a href="https://www.disneymeleemania.com/" target="_blank"><div class="portfolio_button">Website</div></a>
+            </div>
+            <div class="col-md-12"></div>
+        </div>
+        <div class="row alt-row">
+            <div class="col-md-offset-2 col-md-8">
+                <h3>Procedural Scattering Tool for Splines</h3>
+                <h4>I developed a tool to quickly scatter objects in a spline curve for decorating our environments. Read about the full process in <a href="https://medium.com/mighty-bear-games/how-we-procedurally-generated-disney-melee-manias-vegetation-3c882513b1b1">my Medium article!</a></h4>
+            </div>
+            <div class="col-md-offset-2 col-md-4">
+                <img class="portfolio_img" src="media/game_grizzly_toolresult.png"> 
+                <div class="portfolio_caption">Visual Result</div> 
+                <div class="portfolio_subcaption">This tool empowered the set dressing around all of Disney Melee Mania's battle arenas, from little forests to bunches of candy canes.</div>
+            </div>
+            <div class="col-md-4">
+                <img class="portfolio_img" src="media/game_grizzly_tooldemo.gif"> 
+                <div class="portfolio_caption">One-Click Instant Generation</div> 
+                <div class="portfolio_subcaption">This tool reduced the set dressing work for each battle arena from hours down to seconds, as 3D artists no longer had to fuss over each object's placement within the railings.</div>
+            </div>
+            <div class="col-md-12"></div>
+            <div class="col-md-offset-2 col-md-4">
+                <img class="portfolio_img" src="media/game_grizzly_diagram.png">
+                <div class="portfolio_caption">Dot and Cross Product Calculations</div> 
+                <div class="portfolio_subcaption">Since our battle arenas were made with spline-based railings, I made use of some vector math to generate only points that lied within a given spline curve.</div>
+            </div>
+            <div class="col-md-4">
+                <img class="portfolio_img" src="media/game_grizzly_diagram2.png">
+                <div class="portfolio_caption">Intersection Avoidance with Blue Noise</div> 
+                <div class="portfolio_subcaption">To ensure that generated trees, flowers, and other elements didn't overlap with each other, I incorporated a distance check into the algorithm that artists can easily adjust the value of.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h3>[Under Construction]</h3>
+                <h4>I'll be updating this page with more examples of my work - stay tuned!</h4>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <p><a href="mailto:wqyip97@gmail.com">wqyip97@gmail.com</a></p>
+                <p>© Wayne Yip 2023</p>
+            </div>
+            <div class="footer-buttons">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/wayne-yip/" target="_blank"><img class="footer-button" src="media/icon_linkedin.png"></a></li>
+                    <li><a href="https://devpost.com/wayneyip" target="_blank"><img class="footer-button" src="media/icon_devpost.png"></a></li>
+                    <li><a href="https://github.com/wayneyip" target="_blank"><img class="footer-button" src="media/icon_github.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
