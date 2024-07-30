@@ -13,16 +13,18 @@ export default function About()
 	          <br/>Outside of work, I'm on a journey to design 100 original Pokémon in pixel art. Also a rock climbing enjoyer.
 	        </p>
           <a
-            href="#contact"
+            href="Resume_WayneYip_2024.pdf"
+            target="_blank" 
+            rel="noopener noreferrer"
             className="py-2 px-6 text-white text-lg bg-green-500 hover:bg-green-600">
             Resume
           </a>
 	      </div>
 	      <div className="">
 	        <img
-	          className="object-cover object-center"
+	          className="object-cover object-center max-w-sm"
 	          alt="wayne"
-	          src="https://via.placeholder.com/300"
+	          src="about_wayne.jpg"
 	        />
 	      </div>
 	    </div>
