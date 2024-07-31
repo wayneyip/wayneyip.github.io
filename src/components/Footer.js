@@ -1,8 +1,7 @@
 const links = [
-{ title: 'Link 1', iconUrl: 'https://via.placeholder.com/300x150', linkUrl: 'https://example.com' },
-{ title: 'Link 2', iconUrl: 'https://via.placeholder.com/300x150', linkUrl: 'https://example.com' },
-{ title: 'Link 3', iconUrl: 'https://via.placeholder.com/300x150', linkUrl: 'https://example.com' },
-{ title: 'Link 4', iconUrl: 'https://via.placeholder.com/300x150', linkUrl: 'https://example.com' },
+	{ title: 'Linkedin', iconUrl: 'icon_linkedin.png', linkUrl: 'https://www.linkedin.com/in/wayne-yip/' },
+	{ title: 'GitHub', iconUrl: 'icon_github.png', linkUrl: 'https://github.com/wayneyip' },
+	{ title: 'Devpost', iconUrl: 'icon_devpost.png', linkUrl: 'https://devpost.com/wayneyip' },
 ];
 
 export default function Footer()
