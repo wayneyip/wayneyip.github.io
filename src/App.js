@@ -1,17 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar.js';
+import { Routes, Route } from 'react-router-dom';
 import Work from './components/Work.js';
 import About from './components/About.js';
-import Footer from './components/Footer.js';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Work />
-      <About />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Work />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
     </div>
   );
 }
