@@ -12,7 +12,7 @@ export default function Work()
 	return (
     <div className="max-w-screen-lg mx-auto p-4">
       <section className="text-left mt-24 mb-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="overflow-hidden">
               <img src={project.imageUrl} alt={project.title} className="w-full h-auto" />
