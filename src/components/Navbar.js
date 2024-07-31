@@ -1,3 +1,7 @@
+import { Link } from 'react-router-dom';
+import Work from './Work.js';
+import About from './About.js';
+
 export default function Navbar() 
 {
   return (
@@ -13,10 +17,10 @@ export default function Navbar()
         </div>
         <div className="space-x-4">
           <button className="text-white px-4 py-2 hover:bg-blue-700 transition duration-300">
-            Work
+            <Link to="/">Work</Link>
           </button>
           <button className="text-white px-4 py-2 hover:bg-blue-700 transition duration-300">
-            About
+              <Link to="/about">About</Link>
           </button>
         </div>
       </div>
