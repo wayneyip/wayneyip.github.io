@@ -4,6 +4,7 @@ import Work from './components/Work.js';
 import About from './components/About.js';
 import Fishsim from './components/Fishsim.js';
 import Pixelart from './components/Pixelart.js';
+import Mah from './components/Mah.js';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/fishsim' element={<Fishsim />} />
         <Route path='/pixelart' element={<Pixelart />} />
+        <Route path='/mah' element={<Mah />} />
       </Routes>
     </div>
   );
