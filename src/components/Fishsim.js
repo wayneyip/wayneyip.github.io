@@ -10,12 +10,12 @@ const details = [
   },
   {
     imgSrc: "work_fish.png", 
-    title: "Fish Shader with Caustics",
+    title: "Fish Shader with Caustic Projections",
     text: "I customised the default three.js lambert for the fish. It performs a sine wave animation on the vertex shader, and samples a noise texture in world space for the caustics lighting effect."            
   },
   {
     imgSrc: "work_fish.png", 
-    title: "Water Surface Shader with Specular Caustics",
+    title: "Water Surface Shader with Caustic Reflections",
     text: "Using two samples of a normal map and some math tricks, I landed on a water surface that faces downwards but picks up specular highlights from the directional light above."    
   },
   {
@@ -33,13 +33,15 @@ export default function Fishsim()
         <div className="flex-grow">
           <div className="container max-w-screen-lg mx-auto py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Three.js Fish Simulation</h1>
-            <div className="flex">
-              <img className="w-2/3 pr-10" src="work_fish.png" alt="Three.js Fish Simulation"/>
-              <div className="flex-col text-left">
-                <p>Role: Solo Developer</p>
-                <p>Tech: Three.js, GLSL, Node.js, Vite, Vercel</p>
+              <img className="w-full mx-auto mb-8" src="work_fish.png" alt="Three.js Fish Simulation"/>
+              <div className="text-left mb-20">
+                <p><span className="font-medium">Role:</span> Solo Developer</p>
+                <p><span className="font-medium">Tech:</span> Three.js, GLSL, Node.js, Vite, Vercel</p>
                 <br/>
-                <p>An interactive fish simulation that runs on the browser. I built this to apply my initial learnings from Three.js Journey, the comprehensive 93-hour course by Bruno Simon.</p>
+                <p>An interactive fish simulation that runs on the browser. Supports desktop, mobile and tablet devices for mouse and touch input.</p>
+                <br/>
+                <p>I built this to apply my initial learnings from Three.js Journey, the comprehensive 93-hour course by Bruno Simon.</p>
+                <br/>
                 <br/>
                 <a
                   href="https://wayne-ocean.vercel.app/"
@@ -56,7 +58,6 @@ export default function Fishsim()
                   GitHub
                 </a>
               </div>
-            </div>
             {details.map((detail, index) => (
               <Detail key={index} imgSrc={detail.imgSrc} title={detail.title} text={detail.text} />
             ))}
