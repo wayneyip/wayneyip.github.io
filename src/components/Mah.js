@@ -2,19 +2,6 @@ import Navbar from './Navbar.js';
 import DetailsGroup from './DetailsGroup.js';
 import Footer from './Footer.js';
 
-const dangerZoneDetails = [
-  {
-    imgSrc: "work_mah.jpg", 
-    title: "Custom Render Ordering",
-    text: "In implementing the gameplay-critical Danger Zone shader, I worked closely with all production departments (Art, Engineering, Design). Since the shader gets drawn over all opaques, I devised a custom rendering order to handle the visibility of gameplay elements (characters, projectiles, and environments)."    
-  },
-  {
-    imgSrc: "work_mah.jpg", 
-    title: "Tile-Glitching Shader Effect",
-    text: "I created the shader’s tile-glitching effect that suggests the environment dissolving into cyber-space, and supported general development of the shader by my teammate Dedrick Koh."            
-  }
-]
-
 const lodToolsDetails = [
   {
     imgSrc: "work_mah.jpg", 
@@ -40,6 +27,19 @@ const pfpGenDetails = [
     text: "I created this plugin in Python with a host of features, from image recoloring to various search filters, based on the art team's requests and feedback. You can read more about them in this Medium article."  }
 ]
 
+const dangerZoneDetails = [
+  {
+    imgSrc: "work_mah.jpg", 
+    title: "Custom Render Ordering",
+    text: "To implement the gameplay-critical Danger Zone shader, I worked closely with all production departments (Art, Engineering, Design). Since the shader gets drawn over all opaques, I devised a custom rendering order to handle the visibility of gameplay elements (characters, projectiles, and environments)."    
+  },
+  {
+    imgSrc: "work_mah.jpg", 
+    title: "Tile-Glitching Shader Effect",
+    text: "I created the shader’s tile-glitching effect that suggests the environment dissolving into cyber-space, and supported general development of the shader by my teammate Dedrick Koh."            
+  }
+]
+
 export default function Mah()
 {
 	return (
@@ -54,30 +54,31 @@ export default function Mah()
               <div className="text-left mb-20">
                 <p><span className="font-medium">Role:</span> Technical Artist</p>
                 <p><span className="font-medium">Platforms:</span> WebGL, Android</p>
-                <p><span className="font-medium">Software:</span> Unity (Universal Renderer Pipeline), Maya, Blender</p>
-                <p><span className="font-medium">Languages:</span> Python, C#, HLSL</p>
+                <p><span className="font-medium">Software:</span> Unity (Universal Renderer Pipeline), Maya, Blender, Xcode</p>
                 <br/>
-                <p>I worked as a technical artist in a team of 2, with these main contributions:</p>
+                <p>I worked on this project as a technical artist at Mighty Bear Games.</p>
+                <br />
+                <p>My main contributions:</p>
                 <ol>
                 	<li><span className="font-medium">Established workflows and standards</span> for performance profiling, Python scripting, and VFX creation.</li>
 									<li><span className="font-medium">Organized regular optimization passes</span> on WebGL and Android, maintaining budgets for FPS, memory and loading times every milestone.</li>
 									<li><span className="font-medium">Streamlined character LOD creation pipeline</span> by developing Maya tools in Python to automate texture baking, skinning, and exporting.</li>
-									<li><span className="font-medium">Created custom shaders</span> in Unity (Shader Graph, HLSL) for characters, environments, and post-processing.</li>
 									<li><span className="font-medium">Developed Blender plugin</span> in Python for artists to rapidly iterate over 5000 image renders across 4 months.</li>
+									<li><span className="font-medium">Researched and implemented Unity tools</span> for accelerating art workflows and supporting gameplay features.</li>
               	</ol>
                 <br/>
                 <br/>
                 <a
-                  href="https://wayne-ocean.vercel.app/"
+                  href="https://app.mightynet.xyz"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="mr-5 py-2 px-6 text-white text-lg bg-green-500 hover:bg-green-600">
                   Live Game
                 </a>
               </div>
-            <DetailsGroup groupName="Danger Zone Renderer Feature" details={dangerZoneDetails} />
             <DetailsGroup groupName="LOD Generation Maya Tools" details={lodToolsDetails} />
             <DetailsGroup groupName="PFP Generation Blender Plugin" details={pfpGenDetails} />
+            <DetailsGroup groupName="Danger Zone Renderer Feature" details={dangerZoneDetails} />
           </div>
         </div>
       <Footer />
