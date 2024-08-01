@@ -56,7 +56,7 @@ export default function Mah()
                 <p><span className="font-medium">Platforms:</span> WebGL, Android</p>
                 <p><span className="font-medium">Software:</span> Unity (Universal Renderer Pipeline), Maya, Blender, Xcode</p>
                 <br/>
-                <p>I worked on this project as a technical artist at Mighty Bear Games, in a team of 2.</p>
+                <p>I worked on this project as a technical artist at Mighty Bear Games.</p>
                 <br />
                 <p>My main contributions:</p>
                 <ol>
