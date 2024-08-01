@@ -5,7 +5,7 @@ import Footer from './Footer.js';
 
 const projects = [
   { title: 'Three.js Fish Simulation', imageUrl: 'work_fish.png', siteUrl: '/fishsim' },
-  { title: '3D Pixel Art Shader', imageUrl: 'work_pixelart.png', siteUrl: '' },
+  { title: '3D Pixel Art Shader Showcase', imageUrl: 'work_pixelart.png', siteUrl: '/pixelart' },
   { title: 'Mighty Action Heroes', imageUrl: 'work_mah.jpg', siteUrl: '' },
   { title: 'Disney Melee Mania', imageUrl: 'work_grizzly.png', siteUrl: '' },
   { title: 'Ginkgo', imageUrl: 'work_ginkgo.png', siteUrl: '' },
