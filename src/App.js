@@ -6,6 +6,7 @@ import Fishsim from './components/Fishsim.js';
 import Pixelart from './components/Pixelart.js';
 import Mah from './components/Mah.js';
 import Dmm from './components/Dmm.js';
+import Ginkgo from './components/Ginkgo.js';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/pixelart' element={<Pixelart />} />
         <Route path='/mah' element={<Mah />} />
         <Route path='/dmm' element={<Dmm />} />
+        <Route path='/ginkgo' element={<Ginkgo />} />
       </Routes>
     </div>
   );
