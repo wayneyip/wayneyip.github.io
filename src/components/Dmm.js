@@ -68,7 +68,7 @@ export default function Dmm()
                 <p><span className="font-medium">Platforms:</span> iOS, tvOS, macOS (Apple Arcade)</p>
                 <p><span className="font-medium">Software:</span> Unity (Universal Renderer Pipeline), Maya, Xcode</p>
                 <br/>
-                <p>I worked on this project as a technical artist at Mighty Bear Games.</p>
+                <p>I worked on this project as a technical artist at Mighty Bear Games, from pre-production to shipping and post-launch updates (spanning 1.5 years).</p>
                 <br />
                 <p>My main contributions:</p>
                 <ol>
