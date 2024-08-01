@@ -29,8 +29,8 @@ const characterDetails = [
   },
   {
     imgSrc: "work_grizzly.png", 
-    title: "Implementing Characters",
-    text: "I implemented all character rigs and animations in Unity, working closely with animators, engineers and VFX artists to coordinate timings and fix bugs."            
+    title: "Character Asset Implementation",
+    text: "I implemented all character rigs and animations in Unity, working closely with animators, engineers and VFX artists. Many animations had multiple phases tied to VFX and code triggers, so it was essential to coordinate timings and fix bugs."            
   },
   {
     imgSrc: "work_grizzly.png", 
@@ -68,7 +68,9 @@ export default function Dmm()
                 <p><span className="font-medium">Platforms:</span> iOS, tvOS, macOS (Apple Arcade)</p>
                 <p><span className="font-medium">Software:</span> Unity (Universal Renderer Pipeline), Maya, Xcode</p>
                 <br/>
-                <p>I worked as a technical artist in a team of 2, with these main contributions:</p>
+                <p>I worked on this project as a technical artist at Mighty Bear Games, in a team of 2.</p>
+                <br />
+                <p>My main contributions:</p>
                 <ol>
                 	<li><span className="font-medium">Managed outsourcers</span> on delivery and iteration of 20+ Disney-Pixar character rigs over 18 months.</li>
 									<li><span className="font-medium">Implemented all character assets</span> in close collaboration with animators, engineers and VFX artists.</li>
