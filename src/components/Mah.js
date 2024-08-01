@@ -6,12 +6,12 @@ const dangerZoneDetails = [
   {
     imgSrc: "work_mah.jpg", 
     title: "Custom Render Ordering",
-    text: "In implementing the gameplay-critical Danger Zone shader, I worked closely with all production departments (Art, Engineering, Design). Since the shader gets drawn over all opaques, I devised a custom rendering order to balance its visual fidelity with the visibility of gameplay elements (characters, projectiles, environments)."    
+    text: "In implementing the gameplay-critical Danger Zone shader, I worked closely with all production departments (Art, Engineering, Design). Since the shader gets drawn over all opaques, I devised a custom rendering order to handle the visibility of gameplay elements (characters, projectiles, and environments)."    
   },
   {
     imgSrc: "work_mah.jpg", 
     title: "Tile-Glitching Shader Effect",
-    text: "I created the shader’s tile-glitching effect that shows the environment dissolving into cyber-space. Primary development of the shader is by fellow technical artist Dedrick Koh."            
+    text: "I created the shader’s tile-glitching effect that suggests the environment dissolving into cyber-space, and supported general development of the shader by my teammate Dedrick Koh."            
   }
 ]
 
@@ -24,20 +24,20 @@ const lodToolsDetails = [
   {
     imgSrc: "work_mah.jpg", 
     title: "Time Saved",
-    text: "This tool suite reduced the work of LOD generation from 3 weeks to 1 week for the 3D team, accelerating our output of iconic action hero characters in the game."            
+    text: "This tool suite reduced the work of LOD generation from 3 weeks down to 1 week for the 3D team, accelerating the art team's output of hero characters. You can read more about it in this Medium article."            
   }
 ]
 
 const pfpGenDetails = [
   {
     imgSrc: "work_mah.jpg", 
-    title: "Renderer Feature Implementation",
-    text: "This tool enabled concept artists to render out our 5000 NFT images without supervision, allowing for rapid art iteration over 4 months to achieve the final product shown above."    
+    title: "Image Combination and Batch Rendering",
+    text: "This plugin enabled 2D artists to combine their body part assets and render 5000 profile pictures at 2K resolution within 30 minutes. This allowed for rapid art iteration over 4 months to achieve the final product shown above."    
   },
   {
     imgSrc: "work_mah.jpg", 
-    title: "Tile-Glitching Effect",
-    text: "I implemented this tool in Python with a host of features, from image recoloring to various search filters, based on the art team's requests and feedback. 2D artists were able to use the tool on their own for rapid iteration."  }
+    title: "Quality-of-Life Features",
+    text: "I created this plugin in Python with a host of features, from image recoloring to various search filters, based on the art team's requests and feedback. You can read more about them in this Medium article."  }
 ]
 
 export default function Mah()
@@ -53,10 +53,18 @@ export default function Mah()
               <img className="w-full mx-auto mb-8" src="work_mah.jpg" alt="Mighty Action Heroes"/>
               <div className="text-left mb-20">
                 <p><span className="font-medium">Role:</span> Technical Artist</p>
-                <p><span className="font-medium">Tech:</span> Unity (Universal Renderer Pipeline), Shader Graph, C#, Maya, Blender, Python</p>
                 <p><span className="font-medium">Platforms:</span> WebGL, Android</p>
+                <p><span className="font-medium">Software:</span> Unity (Universal Renderer Pipeline), Maya, Blender</p>
+                <p><span className="font-medium">Languages:</span> Python, C#, HLSL</p>
                 <br/>
                 <p>I worked as a technical artist in a team of 2, with these main contributions:</p>
+                <ol>
+                	<li><span className="font-medium">Established workflows and standards</span> for performance profiling, Python scripting, and VFX creation.</li>
+									<li><span className="font-medium">Organized regular optimization passes</span> on WebGL and Android, maintaining budgets for FPS, memory and loading times every milestone.</li>
+									<li><span className="font-medium">Streamlined character LOD creation pipeline</span> by developing Maya tools in Python to automate texture baking, skinning, and exporting.</li>
+									<li><span className="font-medium">Created custom shaders</span> in Unity (Shader Graph, HLSL) for characters, environments, and post-processing.</li>
+									<li><span className="font-medium">Developed Blender plugin</span> in Python for artists to rapidly iterate over 5000 image renders across 4 months.</li>
+              	</ol>
                 <br/>
                 <br/>
                 <a
@@ -69,7 +77,7 @@ export default function Mah()
               </div>
             <DetailsGroup groupName="Danger Zone Renderer Feature" details={dangerZoneDetails} />
             <DetailsGroup groupName="LOD Generation Maya Tools" details={lodToolsDetails} />
-            <DetailsGroup groupName="PFP Generation Blender Tool" details={pfpGenDetails} />
+            <DetailsGroup groupName="PFP Generation Blender Plugin" details={pfpGenDetails} />
           </div>
         </div>
       <Footer />
