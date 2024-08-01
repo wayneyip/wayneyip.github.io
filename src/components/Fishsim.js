@@ -11,12 +11,12 @@ const details = [
   {
     imgSrc: "work_fish.png", 
     title: "Fish Shader",
-    text: "The fishes use an extended three.js lambert shader with sine wave vertex animation, and a noise texture sampled in world space for the caustics lighting effect."            
+    text: "I customised the default three.js lambert for the fish. It animates with a sine wave on the vertex shader, and samples a noise texture in world space for the caustics lighting effect."            
   },
   {
     imgSrc: "work_fish.png", 
     title: "Water Surface Shader",
-    text: "With only one normal map and a couple of math tricks, I got a reflective caustics effect on the water surface shader that picks up light from above."    
+    text: "With only one normal map and some math tricks, I got a reflective caustics effect on the water surface shader that picks up light from above."    
   },
   {
     imgSrc: "work_fish.png", 
@@ -39,7 +39,7 @@ export default function Fishsim()
                 <p>Role: Solo Developer</p>
                 <p>Tech: Three.js, GLSL, Node.js, Vite, Vercel</p>
                 <br/>
-                <p>An interactive fish simulation that runs on the browser. I built this to consolidate my learnings from Three.js Journey, the renowned 93-hour course by Bruno Simon.</p>
+                <p>An interactive fish simulation that runs on the browser. I built this to consolidate my learnings from Three.js Journey, the comprehensive 93-hour course by Bruno Simon.</p>
                 <br/>
                 <a
                   href="https://wayne-ocean.vercel.app/"
