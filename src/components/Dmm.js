@@ -16,13 +16,39 @@ const characterDetails = [
   {
     imgSrc: "work_grizzly.png", 
     title: "Character Animation Implementations",
-    text: "I took charge of implementing all character animations in Unity with the Animancer plugin, working closely with animators, engineers and VFX artists to coordinate the timing of each attack."            
+    text: "I implemented all character rigs and animations in Unity, working closely with animators, engineers and VFX artists to coordinate timings and fix bugs."            
   },
   {
     imgSrc: "work_grizzly.png", 
     title: "Avatar Mask Scripting",
     text: "I also extended our Animancer setup with C# scripts to incorporate avatar masks, allowing our characters to run and attack smoothly for a dynamic battlefield."            
   }
+]
+
+const charRigDetails = [
+  {
+    imgSrc: "work_grizzly.png", 
+    title: "Abstract Bing Bong Rig",
+    text: "I took charge of rigging Abstract Bing Bong, whose logic-defying anatomy required a lot of unconventional technical setup for animation."    
+  },
+  {
+    imgSrc: "work_grizzly.png", 
+    title: "Rig in Action",
+    text: "This custom rig empowered the various zany animations and facial expressions behind this unlockable skin for Bing Bong."            
+  },
+]
+
+const scatterToolDetails = [
+  {
+    imgSrc: "work_grizzly.png", 
+    title: "Visual Result",
+    text: "This tool empowered the set dressing around all of Disney Melee Mania's battle arenas, from little forests to bunches of candy canes."    
+  },
+  {
+    imgSrc: "work_grizzly.png", 
+    title: "Time Saved",
+    text: "This tool reduced the set dressing work for each battle arena from hours down to seconds, as 3D artists no longer had to fuss over each object's placement within the railings."            
+  },
 ]
 
 export default function Dmm()
@@ -38,28 +64,30 @@ export default function Dmm()
               <img className="w-full mx-auto mb-8" src="work_grizzly.png" alt="Disney Melee Mania"/>
               <div className="text-left mb-20">
                 <p><span className="font-medium">Role:</span> Technical Artist</p>
-                <p><span className="font-medium">Platforms:</span> iOS, tvOS, macOS</p>
-                <p><span className="font-medium">Software:</span> Unity (Universal Renderer Pipeline), Maya</p>
+                <p><span className="font-medium">Platforms:</span> iOS, tvOS, macOS (Apple Arcade)</p>
+                <p><span className="font-medium">Software:</span> Unity (Universal Renderer Pipeline), Maya, Xcode</p>
                 <br/>
                 <p>I worked as a technical artist in a team of 2, with these main contributions:</p>
                 <ol>
-                	<li><span className="font-medium">Established workflows and standards</span> for performance profiling, Python scripting, and VFX creation.</li>
-									<li><span className="font-medium">Organized regular optimization passes</span> on WebGL and Android, maintaining budgets for FPS, memory and loading times every milestone.</li>
-									<li><span className="font-medium">Streamlined character LOD creation pipeline</span> by developing Maya tools in Python to automate texture baking, skinning, and exporting.</li>
-									<li><span className="font-medium">Created custom shaders</span> in Unity (Shader Graph, HLSL) for characters, environments, and post-processing.</li>
-									<li><span className="font-medium">Developed Blender plugin</span> in Python for artists to rapidly iterate over 5000 image renders across 4 months.</li>
+                	<li><span className="font-medium">Managed outsourcers</span> on delivery and iteration of 20+ Disney-Pixar character rigs over 18 months.</li>
+									<li><span className="font-medium">Implemented all character assets</span> in close collaboration with animators, engineers and VFX artists.</li>
+									<li><span className="font-medium">Optimized performance</span> on mobile devices with Xcode, bringing low-end iOS devices from 20 to 60 FPS.</li>
+									<li><span className="font-medium">Developed tools</span> in C# to streamline art workflows in Unity.</li>
+									<li><span className="font-medium">Created character rigs</span> for characters with unconventional anatomy.</li>
               	</ol>
                 <br/>
                 <br/>
                 <a
-                  href="https://wayne-ocean.vercel.app/"
+                  href="https://apps.apple.com/us/app/disney-melee-mania/id1544934886"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="mr-5 py-2 px-6 text-white text-lg bg-green-500 hover:bg-green-600">
-                  Website
+                  App Store
                 </a>
               </div>
             <DetailsGroup groupName="Character Asset Management and Implementation" details={characterDetails} />
+            <DetailsGroup groupName="Abstract Bing Bong Rig" details={charRigDetails} />
+            <DetailsGroup groupName="Spline-Based Scatter Tool" details={scatterToolDetails} />
           </div>
         </div>
       <Footer />
