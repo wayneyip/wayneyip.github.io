@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Work from './components/Work.js';
 import About from './components/About.js';
+import Fishsim from './components/Fishsim.js';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Work />} />
         <Route path='/about' element={<About />} />
+        <Route path='/fishsim' element={<Fishsim />} />
       </Routes>
     </div>
   );
