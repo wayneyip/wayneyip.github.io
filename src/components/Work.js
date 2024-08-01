@@ -7,7 +7,7 @@ const projects = [
   { title: '3D Pixel Art Shader Showcase', imageUrl: 'work_pixelart.png', siteUrl: '/pixelart' },
   { title: 'Mighty Action Heroes', imageUrl: 'work_mah.jpg', siteUrl: '/mah' },
   { title: 'Disney Melee Mania', imageUrl: 'work_grizzly.png', siteUrl: '/dmm' },
-  { title: 'Ginkgo', imageUrl: 'work_ginkgo.png', siteUrl: '' },
+  { title: 'Ginkgo', imageUrl: 'work_ginkgo.png', siteUrl: '/ginkgo' },
   { title: 'Maya Tools', imageUrl: 'work_mayatools.png', siteUrl: '' },
 ];
 
