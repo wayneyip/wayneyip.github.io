@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar.js';
-import Fishsim from './Fishsim.js';
 import Footer from './Footer.js';
 
 const projects = [
