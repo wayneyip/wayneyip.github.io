@@ -2,6 +2,20 @@ import Navbar from './Navbar.js';
 import DetailsGroup from './DetailsGroup.js';
 import Footer from './Footer.js';
 
+
+const scatterToolDetails = [
+  {
+    imgSrc: "work_grizzly.png", 
+    title: "Visual Result",
+    text: "This tool empowered the set dressing around all of Disney Melee Mania's battle arenas, from little forests to bunches of candy canes."    
+  },
+  {
+    imgSrc: "work_grizzly.png", 
+    title: "Time Saved",
+    text: "This tool reduced the set dressing work for each battle arena from hours down to seconds, as 3D artists no longer had to fuss over each object's placement within the railings."            
+  },
+]
+
 const characterDetails = [
   {
     imgSrc: "work_grizzly.png", 
@@ -15,13 +29,13 @@ const characterDetails = [
   },
   {
     imgSrc: "work_grizzly.png", 
-    title: "Character Animation Implementations",
+    title: "Implementing Characters",
     text: "I implemented all character rigs and animations in Unity, working closely with animators, engineers and VFX artists to coordinate timings and fix bugs."            
   },
   {
     imgSrc: "work_grizzly.png", 
     title: "Avatar Mask Scripting",
-    text: "I also extended our Animancer setup with C# scripts to incorporate avatar masks, allowing our characters to run and attack smoothly for a dynamic battlefield."            
+    text: "I extended our Animancer setup with C# scripts to incorporate avatar masks, allowing our characters to run and attack smoothly for a dynamic battlefield."            
   }
 ]
 
@@ -35,19 +49,6 @@ const charRigDetails = [
     imgSrc: "work_grizzly.png", 
     title: "Rig in Action",
     text: "This custom rig empowered the various zany animations and facial expressions behind this unlockable skin for Bing Bong."            
-  },
-]
-
-const scatterToolDetails = [
-  {
-    imgSrc: "work_grizzly.png", 
-    title: "Visual Result",
-    text: "This tool empowered the set dressing around all of Disney Melee Mania's battle arenas, from little forests to bunches of candy canes."    
-  },
-  {
-    imgSrc: "work_grizzly.png", 
-    title: "Time Saved",
-    text: "This tool reduced the set dressing work for each battle arena from hours down to seconds, as 3D artists no longer had to fuss over each object's placement within the railings."            
   },
 ]
 
@@ -85,9 +86,9 @@ export default function Dmm()
                   App Store
                 </a>
               </div>
+            <DetailsGroup groupName="Spline-Based Scatter Tool" details={scatterToolDetails} />
             <DetailsGroup groupName="Character Asset Management and Implementation" details={characterDetails} />
             <DetailsGroup groupName="Abstract Bing Bong Rig" details={charRigDetails} />
-            <DetailsGroup groupName="Spline-Based Scatter Tool" details={scatterToolDetails} />
           </div>
         </div>
       <Footer />
