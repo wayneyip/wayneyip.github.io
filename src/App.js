@@ -5,6 +5,7 @@ import About from './components/About.js';
 import Fishsim from './components/Fishsim.js';
 import Pixelart from './components/Pixelart.js';
 import Mah from './components/Mah.js';
+import Dmm from './components/Dmm.js';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/fishsim' element={<Fishsim />} />
         <Route path='/pixelart' element={<Pixelart />} />
         <Route path='/mah' element={<Mah />} />
+        <Route path='/dmm' element={<Dmm />} />
       </Routes>
     </div>
   );
