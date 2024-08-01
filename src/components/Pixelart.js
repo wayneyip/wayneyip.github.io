@@ -29,7 +29,7 @@ const foliageDetails = [
   {
     imgSrc: "work_pixelart.png", 
     title: "Spherized Custom Normals",
-    text: "Pixel art cannot afford the noisiness of irregular lighting, so baking normals from a sphere is crucial for clean-looking foliage."            
+    text: "Pixel art cannot afford the noisiness of irregular lighting, so baking normals from a sphere is crucial for clean-looking trees."            
   },
   {
     imgSrc: "work_pixelart.png", 
@@ -44,7 +44,7 @@ const foliageDetails = [
   {
     imgSrc: "work_pixelart.png", 
     title: "Full Shader Graph",
-    text: "Includes the wind animation in the vertex shader, and toon shading in the fragment shader."    
+    text: "Includes wind animation in the vertex shader, and toon shading in the fragment shader."    
   },
 ]
 
@@ -70,7 +70,7 @@ export default function Pixelart()
           <div className="container max-w-screen-lg mx-auto py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">3D Pixel Art Shader Showcase</h1>
             <img className="w-full mx-auto mb-8" src="work_pixelart.png" alt="3D Pixel Art Shader Showcase"/>
-            <div className="text-left mb-20">
+            <div className="text-left mb-12">
               <p><span className="font-medium">Role:</span> Solo Developer and Artist</p>
               <p><span className="font-medium">Tech:</span> Unity (Universal Render Pipeline), Shader Graph, C#, Maya, GIMP</p>
               <br/>
