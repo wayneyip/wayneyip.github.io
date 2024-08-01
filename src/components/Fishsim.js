@@ -1,18 +1,29 @@
 import Navbar from './Navbar.js';
+import Detail from './Detail.js';
 import Footer from './Footer.js';
 
-function Detail({ imgSrc, imgAlt, title, text })
-{
-  return (
-    <div className="flex mt-10">
-      <img className="w-2/3 pr-10" src={imgSrc} alt={imgAlt}/>
-      <div className="flex-col text-left">
-        <h2>{title}</h2>
-        <p>{text}</p>
-      </div> 
-    </div>
-  )
-}
+const details = [
+  {
+    imgSrc: "work_fish.png", 
+    title: "Boids with Ray Avoidance",
+    text: "Each fish's movement is simulated using the boids flocking algorithm. I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+  },
+  {
+    imgSrc: "work_fish.png", 
+    title: "Fish Shader",
+    text: "The fishes use an extended three.js lambert shader with sine wave vertex animation, and a noise texture sampled in world space for the caustics lighting effect."            
+  },
+  {
+    imgSrc: "work_fish.png", 
+    title: "Water Surface Shader",
+    text: "With only one normal map and a couple of math tricks, I got a reflective caustics effect on the water surface shader that picks up light from above."    
+  },
+  {
+    imgSrc: "work_fish.png", 
+    title: "Fast Procedural Godrays",
+    text: "God rays are faked with a single cone mesh that uses the same noise texture, sampled with polar coordinates that shift over time."    
+  },
+]
 
 export default function Fishsim()
 {
@@ -39,21 +50,9 @@ export default function Fishsim()
                 </a>
               </div>
             </div>
-            <Detail 
-              imgSrc="work_fish.png" 
-              imgAlt="Boids with Ray Avoidance"
-              title="Boids with Ray Avoidance"
-              text="Each fish's movement is simulated using the boids flocking algorithm. I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."
-            />
-            
-            <h2>Fish Shader</h2>
-            <p>The fishes use an extended three.js lambert shader with sine wave vertex animation, and a noise texture sampled in world space for the caustics lighting effect.</p>
-            
-            <h2>Water Surface Shader</h2>
-            <p>With only one normal map and a couple of math tricks, I got a reflective caustics effect on the water surface shader that picks up light from above.</p>
-            
-            <h2>Fast Procedural Godrays</h2>
-            <p>God rays are faked with a single cone mesh that uses the same noise texture, sampled with polar coordinates that shift over time.</p>
+            {details.map((detail, index) => (
+              <Detail key={index} imgSrc={detail.imgSrc} title={detail.title} text={detail.text} />
+            ))}
           </div>
         </div>
       <Footer />
