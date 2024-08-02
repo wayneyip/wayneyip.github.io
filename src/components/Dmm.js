@@ -1,5 +1,6 @@
 import Navbar from './Navbar.js';
 import DetailsGroup from './DetailsGroup.js';
+import BackToHome from './BackToHome.js';
 import Footer from './Footer.js';
 
 
@@ -93,6 +94,7 @@ export default function Dmm()
             <DetailsGroup groupName="Abstract Bing Bong Rig" details={charRigDetails} />
           </div>
         </div>
+      <BackToHome />
       <Footer />
     </div>
 	)

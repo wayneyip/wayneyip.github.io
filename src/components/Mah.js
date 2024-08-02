@@ -1,5 +1,6 @@
 import Navbar from './Navbar.js';
 import DetailsGroup from './DetailsGroup.js';
+import BackToHome from './BackToHome.js';
 import Footer from './Footer.js';
 
 const lodToolsDetails = [
@@ -81,6 +82,7 @@ export default function Mah()
             <DetailsGroup groupName="Danger Zone Renderer Feature" details={dangerZoneDetails} />
           </div>
         </div>
+      <BackToHome />
       <Footer />
     </div>
 	)
