@@ -1,5 +1,6 @@
 import Navbar from './Navbar.js';
 import DetailWithLink from './DetailWithLink.js';
+import BackToHome from './BackToHome.js';
 import Footer from './Footer.js';
 
 const details = [
@@ -74,6 +75,7 @@ export default function Mayatools()
             ))}
           </div>
         </div>
+      <BackToHome />
       <Footer />
     </div>
   )

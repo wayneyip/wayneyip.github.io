@@ -1,5 +1,6 @@
 import Navbar from './Navbar.js';
 import DetailsGroup from './DetailsGroup.js';
+import BackToHome from './BackToHome.js';
 import Footer from './Footer.js';
 
 
@@ -97,6 +98,7 @@ export default function Ginkgo()
             <DetailsGroup groupName="Lantern Yokai" details={lanternYokaiDetails} />
           </div>
         </div>
+      <BackToHome />
       <Footer />
     </div>
 	)
