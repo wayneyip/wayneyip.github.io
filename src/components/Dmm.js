@@ -71,13 +71,13 @@ export default function Dmm()
                 <p>I worked on this project as a technical artist at Mighty Bear Games, from pre-production to shipping and post-launch updates (spanning 1.5 years).</p>
                 <br />
                 <p>My main contributions:</p>
-                <ol>
+                <ul className="list-disc list-inside">
                 	<li><span className="font-medium">Managed outsourcers</span> on delivery and iteration of 20+ Disney-Pixar character rigs over 18 months.</li>
 									<li><span className="font-medium">Implemented all character assets</span> in close collaboration with animators, engineers and VFX artists.</li>
 									<li><span className="font-medium">Optimized performance</span> on mobile devices with Xcode, bringing low-end iOS devices from 20 to 60 FPS.</li>
 									<li><span className="font-medium">Developed tools</span> in C# to streamline art workflows in Unity.</li>
 									<li><span className="font-medium">Created character rigs</span> for characters with unconventional anatomy.</li>
-              	</ol>
+              	</ul>
                 <br/>
                 <br/>
                 <a

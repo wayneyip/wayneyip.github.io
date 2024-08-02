@@ -59,13 +59,13 @@ export default function Mah()
                 <p>I worked on this project as a technical artist at Mighty Bear Games, from prototyping to soft launch (spanning 1.5 years).</p>
                 <br />
                 <p>My main contributions:</p>
-                <ol>
+                <ul className="list-disc list-inside">
                 	<li><span className="font-medium">Established workflows and standards</span> for performance profiling, Python scripting, and VFX creation.</li>
 									<li><span className="font-medium">Organized regular optimization passes</span> on WebGL and Android, maintaining budgets for FPS, memory and loading times every milestone.</li>
 									<li><span className="font-medium">Streamlined character LOD creation pipeline</span> by developing Maya tools in Python to automate texture baking, skinning, and exporting.</li>
 									<li><span className="font-medium">Developed Blender plugin</span> in Python for artists to rapidly iterate over 5000 image renders across 4 months.</li>
 									<li><span className="font-medium">Researched and implemented Unity tools</span> for accelerating art workflows and supporting gameplay features.</li>
-              	</ol>
+              	</ul>
                 <br/>
                 <br/>
                 <a
