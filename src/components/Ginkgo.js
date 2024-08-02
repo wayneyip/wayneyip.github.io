@@ -6,49 +6,62 @@ import Footer from './Footer.js';
 const scatterToolDetails = [
   {
     imgSrc: "work_ginkgo.png", 
+    title: "Automatic Weight Painting Algorithm",
+    text: "To ensure smooth deformation, I developed an algorithm to skin the cloth mesh with polynomial distribution in a single click."    
+  },
+  {
+    imgSrc: "work_ginkgo.png", 
+    title: "Adjustable Power Curvature",
+    text: "To rapidly prototype different stretch behaviors, I designed the algorithm to allow user input of different powers for different curvatures: linear, quadratic, cubic, etc."            
+  },
+  {
+    imgSrc: "work_ginkgo.png", 
+    title: "Adjustable Ledge Distance",
+    text: "Since our fabric rested on ledges in the game, I designed the algorithm to account for variable ledge distances, painting ledge areas as 100% solid and scaling the remaining gradients accordingly."            
+  },
+  {
+    imgSrc: "work_ginkgo.png", 
     title: "Visual Result",
-    text: "This tool empowered the set dressing around all of Disney Melee Mania's battle arenas, from little forests to bunches of candy canes."    
-  },
-  {
-    imgSrc: "work_ginkgo.png", 
-    title: "Time Saved",
-    text: "This tool reduced the set dressing work for each battle arena from hours down to seconds, as 3D artists no longer had to fuss over each object's placement within the railings."            
+    text: "The rigged fabric is also layered with in-engine cloth simulation. I tuned the cloth painting and physics settings to achieve dynamic stretching behavior that was both responsive and stable."            
   },
 ]
 
-const characterDetails = [
+const chaseYokaiDetails = [
   {
     imgSrc: "work_ginkgo.png", 
-    title: "Outsourcer Rig Management",
-    text: "I guided outsourcers through the development of all character rigs, which helped us nail down the flowing motion of Elsa’s dress ribbons and Meilin Lee’s expressive smiles, among many other effects."    
+    title: "Experimental Anatomy",
+    text: "I directed our artists to mess with conventional anatomy, bending the knees back and removing the clavicles for a spider-like silhouette."    
   },
   {
     imgSrc: "work_ginkgo.png", 
-    title: "Custom Camera Animation Setup",
-    text: "I also established the Maya-to-Unity pipeline for custom camera animations that empower all of the game’s dynamic character intros."            
+    title: "IK/FK Blend Controls",
+    text: "For its intense clambering motions, I set up IK/FK blending using my Kinematify autorigger, allowing our animator to switch as needed."            
   },
-  {
-    imgSrc: "work_ginkgo.png", 
-    title: "Character Asset Implementation",
-    text: "I implemented all character rigs and animations in Unity, working closely with animators, engineers and VFX artists. Many animations had multiple phases tied to VFX and code triggers, so it was essential to coordinate timings and fix bugs."            
-  },
-  {
-    imgSrc: "work_ginkgo.png", 
-    title: "Avatar Mask Scripting",
-    text: "I extended our Animancer setup with C# scripts to incorporate avatar masks, allowing our characters to run and attack smoothly for a dynamic battlefield."            
-  }
 ]
 
-const charRigDetails = [
+const spiderYokaiDetails = [
   {
     imgSrc: "work_ginkgo.png", 
-    title: "Abstract Bing Bong Rig",
-    text: "I took charge of rigging Abstract Bing Bong, whose logic-defying anatomy required a lot of unconventional technical setup for animation."    
+    title: "Curve-based Eyelid Rig",
+    text: "I rigged the spider's eyelids using my Facify autorigger, allowing our animator to convey a range of expressions with a single eye."    
   },
   {
     imgSrc: "work_ginkgo.png", 
-    title: "Rig in Action",
-    text: "This custom rig empowered the various zany animations and facial expressions behind this unlockable skin for Bing Bong."            
+    title: "Rounded Silhouette Design",
+    text: "I directed our artists to distinguish this friendly creature's silhouette from the Chase Yokai using round shapes and fuzzy legs."            
+  },
+]
+
+const lanternYokaiDetails = [
+  {
+    imgSrc: "work_ginkgo.png", 
+    title: "Minimalist Rig",
+    text: "I designed this rig as an exercise in efficiency, using only 3 joints to achieve stretchy behavior with the jaws and eyeball."    
+  },
+  {
+    imgSrc: "work_ginkgo.png", 
+    title: "Dynamic Tassel Simulation",
+    text: "To make lantern interactions engaging, I simulated the 2 bones in its tassel as RigidBodies, creating swishy behavior as the player aims their needle."            
   },
 ]
 
@@ -78,9 +91,10 @@ export default function Ginkgo()
                   Steam
                 </a>
               </div>
-            <DetailsGroup groupName="Spline-Based Scatter Tool" details={scatterToolDetails} />
-            <DetailsGroup groupName="Character Asset Management and Implementation" details={characterDetails} />
-            <DetailsGroup groupName="Abstract Bing Bong Rig" details={charRigDetails} />
+            <DetailsGroup groupName="Sewable Cloth Rigging Tool" details={scatterToolDetails} />
+            <DetailsGroup groupName="Chase Yokai" details={chaseYokaiDetails} />
+            <DetailsGroup groupName="Spider Yokai" details={spiderYokaiDetails} />
+            <DetailsGroup groupName="Lantern Yokai" details={lanternYokaiDetails} />
           </div>
         </div>
       <Footer />
