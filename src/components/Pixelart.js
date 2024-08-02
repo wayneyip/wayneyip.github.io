@@ -6,7 +6,7 @@ const outlineDetails = [
   {
     imgSrc: "work_pixelart.png", 
     title: "Defined by Vertex Colors",
-    text: "Using vertex colors, the artist gets to define where outlines are drawn, which gives more stable and controllable results than the traditional depth- or normals-based outlines."    
+    text: "By painting vertex colors, the artist gets to define where outlines are drawn, which gives more stable and controllable results than the traditional depth- or normals-based outlines."    
   },
   {
     imgSrc: "work_pixelart.png", 
@@ -16,7 +16,7 @@ const outlineDetails = [
   {
     imgSrc: "work_pixelart.png", 
     title: "Colored by Lights",
-    text: "Outlines are realtime-lit in the main light's direction. To avoid visual clutter, I apply this only to the outer outlines of characters."    
+    text: "Outlines are realtime-lit in the main light's direction. To avoid visual clutter, I applied this only to the outer outlines of characters."    
   },
   {
     imgSrc: "work_pixelart.png", 
@@ -34,7 +34,7 @@ const foliageDetails = [
   {
     imgSrc: "work_pixelart.png", 
     title: "Perpendicular Fade",
-    text: "To further reduce noise, leaf planes fade out when their sides face the camera. Because their normals are already overwritten by the sphere, I reconstruct their normals in the shader using the cross product of partial derivatives (ddx and ddy)."    
+    text: "To further reduce noise, leaf planes fade out when their sides face the camera. Because their normals are already overwritten by the sphere, I reconstructed their normals in the shader using the cross product of partial derivatives (ddx and ddy)."    
   },
   {
     imgSrc: "work_pixelart.png", 
