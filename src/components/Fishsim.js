@@ -1,5 +1,6 @@
 import Navbar from './Navbar.js';
 import Detail from './Detail.js';
+import BackToHome from './BackToHome.js';
 import Footer from './Footer.js';
 
 const details = [
@@ -63,6 +64,7 @@ export default function Fishsim()
             ))}
           </div>
         </div>
+      <BackToHome />
       <Footer />
     </div>
   )
