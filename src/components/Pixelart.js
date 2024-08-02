@@ -70,7 +70,9 @@ export default function Pixelart()
         <div className="flex-grow">
           <div className="container max-w-screen-lg mx-auto py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">3D Pixel Art Shader Showcase</h1>
-            <img className="w-full mx-auto mb-8" src="work_pixelart.png" alt="3D Pixel Art Shader Showcase"/>
+            <video className="w-full mx-auto mb-8" controls> 
+            	<source src="pixelart_mainshot.mp4" type="video/mp4" />
+          	</video>
             <div className="text-left mb-12">
               <p><span className="font-medium">Role:</span> Solo Developer and Artist</p>
               <p><span className="font-medium">Tech:</span> Unity (Universal Render Pipeline), Shader Graph, C#, Maya, GIMP</p>
