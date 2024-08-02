@@ -8,7 +8,7 @@ const projects = [
   { title: 'Mighty Action Heroes', imageUrl: 'work_mah.jpg', siteUrl: '/mah' },
   { title: 'Disney Melee Mania', imageUrl: 'work_grizzly.png', siteUrl: '/dmm' },
   { title: 'Ginkgo', imageUrl: 'work_ginkgo.png', siteUrl: '/ginkgo' },
-  { title: 'Maya Tools', imageUrl: 'work_mayatools.png', siteUrl: '' },
+  { title: 'Maya Tools', imageUrl: 'work_mayatools.png', siteUrl: '/mayatools' },
 ];
 
 export default function Home()
