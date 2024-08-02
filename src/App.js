@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop.js';
 import Work from './components/Work.js';
 import About from './components/About.js';
 import Fishsim from './components/Fishsim.js';
@@ -12,6 +13,7 @@ import Mayatools from './components/Mayatools.js';
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Work />} />
         <Route path='/about' element={<About />} />
