@@ -5,23 +5,23 @@ import Footer from './Footer.js';
 const outlineDetails = [
   {
     imgSrc: "work_pixelart.png", 
-    title: "Define Outlines with Vertex Colors",
-    text: "Using vertex colors, the artist gets to define where outlines are drawn, which gives more stable and controllable results than the traditional depth- or normals-based outlines."    
+    title: "Defined by Vertex Colors",
+    text: "By painting vertex colors, the artist gets to define where outlines are drawn, which gives more stable and controllable results than the traditional depth- or normals-based outlines."    
   },
   {
     imgSrc: "work_pixelart.png", 
-    title: "Outline Objects by Layer",
-    text: "Despite being a fullscreen effect, the outlines are applied only to opaques in the Character layer, allowing characters to stand out in the visual hierarchy. I did this by writing a custom renderer feature."            
+    title: "Applied to Selected Layers Only",
+    text: "Despite being a fullscreen effect, the outlines are applied only to opaques in the Character layer, allowing characters to stand out in the visual hierarchy. I achieved the layer mask by writing a custom renderer feature in C#."            
   },
   {
     imgSrc: "work_pixelart.png", 
-    title: "Color Outlines with Lights",
-    text: "Outlines are realtime-lit in the main light's direction. To avoid visual clutter, I apply this only to the outer outlines of characters."    
+    title: "Colored by Lights",
+    text: "Outlines are realtime-lit in the main light's direction. To avoid visual clutter, I applied this only to the outer outlines of characters."    
   },
   {
     imgSrc: "work_pixelart.png", 
     title: "Full Shader Graph",
-    text: "The messy areas are from sampling the four neighboring pixels, which is essential for crisp single-pixel outlines."    
+    text: "The messy areas are from sampling the four neighboring pixels, which is essential for crisp 1-pixelwide outlines."    
   },
 ]
 
@@ -29,17 +29,17 @@ const foliageDetails = [
   {
     imgSrc: "work_pixelart.png", 
     title: "Spherized Custom Normals",
-    text: "Pixel art cannot afford the noisiness of irregular lighting, so baking normals from a sphere is crucial for clean-looking trees."            
+    text: "For clean pixel art foliage, the leaf planes cannot cast shadows on each other, so I baked custom normals onto them as projected from a sphere mesh."            
   },
   {
     imgSrc: "work_pixelart.png", 
     title: "Perpendicular Fade",
-    text: "To further reduce noise, leaf planes fade out when perpendicular to the camera. Because their normals are already overwritten with the sphere, I reconstruct normals in the shader using the cross product of ddx and ddy."    
+    text: "To further reduce noise, leaf planes fade out when their sides face the camera. Because their normals are already overwritten by the sphere, I reconstructed their normals in the shader using the cross product of partial derivatives (ddx and ddy)."    
   },
   {
     imgSrc: "work_pixelart.png", 
     title: "Foreground Darkening",
-    text: "Leaves are darkened only near the camera, like a reverse depth fog. This method of defining the foreground is especially impactful with the striking colors of pixel art."    
+    text: "Foliage is darkened near the camera, giving a nice definition to the foreground. To get a stepped color gradient, I smoothstepped and posterized the depth value."    
   },
   {
     imgSrc: "work_pixelart.png", 
@@ -74,9 +74,9 @@ export default function Pixelart()
               <p><span className="font-medium">Role:</span> Solo Developer and Artist</p>
               <p><span className="font-medium">Tech:</span> Unity (Universal Render Pipeline), Shader Graph, C#, Maya, GIMP</p>
               <br/>
-              <p>My showcase of a 3D scene that emulates 2D Pokémon sprites from the Nintendo DS era, with single-pixel outlines lit by the sun.</p>
+              <p>My showcase of a 3D scene that emulates 2D Pokémon sprites from the Nintendo DS era, with 1-pixelwide outlines lit by the sun.</p>
               <br/>
-              <p>All assets shown are mine, including the character designs, models, rigs, animations, textures, VFX, UI, font, and shaders -- only the human uses a Mixamo rig and animation.</p>
+              <p>All assets shown are mine -- shaders, character designs, models, rigs, animations, textures, VFX, UI, and font -- only the human uses a Mixamo rig and animation.</p>
             </div>
             <DetailsGroup groupName="Pixel Art Outline Shader" details={outlineDetails} />
             <DetailsGroup groupName="Foliage Shader" details={foliageDetails} />
