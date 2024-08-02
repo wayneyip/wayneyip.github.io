@@ -6,9 +6,9 @@ export default function DetailWithLink({ imgSrc, imgAlt, title, subtitle, text, 
       <div className="flex-col text-left">
         <h2 className="mb-2 text-xl font-medium">{title}</h2>
         <h2 className="mb-2 text-lg">{subtitle}</h2>
-        <ul className="mb-10">
+        <ul className="mb-10 list-disc list-inside">
         {text.map((bullet, index) => (
-        	<li>{bullet}</li>
+        	<li key={bullet}>{bullet}</li>
       	))}
       	</ul>
         <a
