@@ -76,20 +76,17 @@ export default function Ginkgo()
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Ginkgo</h1>
             <p className="text-left">Inspired by East Asian horror, Ginkgo is a first-person horror game where you use a magic needle to solve puzzles and outsmart surreal monsters.</p>
             <br/>
-            <iframe 
-              className="mb-20"
-              src="https://www.youtube.com/embed/EBELVAvd1g4" 
-              title="YouTube video player" 
-              frameBorder="0" 
-              allow="accelerometer; 
-              autoplay; 
-              clipboard-write; 
-              encrypted-media; 
-              gyroscope; 
-              picture-in-picture; 
-              web-share" 
-              allowFullScreen>
-            </iframe>
+            <div className="aspect-video mb-12">
+              <iframe 
+              className="w-full h-full"
+                src="https://www.youtube.com/embed/EBELVAvd1g4" 
+                title="Ginkgo | NEW Student Game Trailer Reveal | #USCGamesEXPO 2020" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+              </iframe>
+            </div>
             <div className="text-left mb-20">
               <p><span className="font-medium">Role:</span> Art Lead</p>
               <p><span className="font-medium">Platforms:</span> Windows, macOS</p>
