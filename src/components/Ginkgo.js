@@ -4,24 +4,24 @@ import BackToHome from './BackToHome.js';
 import Footer from './Footer.js';
 
 
-const scatterToolDetails = [
+const clothToolDetails = [
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_clothrig.gif", 
     title: "Automatic Weight Painting Algorithm",
     text: "To ensure smooth deformation, I developed an algorithm to skin the cloth mesh with polynomial distribution in a single click."    
   },
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_clothcurve.gif", 
     title: "Adjustable Power Curvature",
     text: "To rapidly prototype different stretch behaviors, I designed the algorithm to allow user input of different powers for different curvatures: linear, quadratic, cubic, etc."            
   },
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_clothledge.gif", 
     title: "Adjustable Ledge Distance",
     text: "Since our fabric rested on ledges in the game, I designed the algorithm to account for variable ledge distances, painting ledge areas as 100% solid and scaling the remaining gradients accordingly."            
   },
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_clothsim.gif", 
     title: "Visual Result",
     text: "The rigged fabric is also layered with in-engine cloth simulation. I tuned the cloth painting and physics settings to achieve dynamic stretching behavior that was both responsive and stable."            
   },
@@ -29,12 +29,12 @@ const scatterToolDetails = [
 
 const chaseYokaiDetails = [
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_chase.gif", 
     title: "Experimental Anatomy",
     text: "I directed our artists to mess with conventional anatomy, bending the knees back and removing the clavicles for a spider-like silhouette."    
   },
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_chaserig.gif", 
     title: "IK/FK Blend Controls",
     text: "For its intense clambering motions, I set up IK/FK blending using my Kinematify autorigger, allowing our animator to switch as needed."            
   },
@@ -42,12 +42,12 @@ const chaseYokaiDetails = [
 
 const spiderYokaiDetails = [
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_spiderrig.gif", 
     title: "Curve-based Eyelid Rig",
     text: "I rigged the spider's eyelids using my Facify autorigger, allowing our animator to convey a range of expressions with a single eye."    
   },
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_spider.gif", 
     title: "Rounded Silhouette Design",
     text: "I directed our artists to distinguish this friendly creature's silhouette from the Chase Yokai using round shapes and fuzzy legs."            
   },
@@ -55,12 +55,12 @@ const spiderYokaiDetails = [
 
 const lanternYokaiDetails = [
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_lanternrig.gif", 
     title: "Minimalist Rig",
     text: "I designed this rig as an exercise in efficiency, using only 3 joints to achieve stretchy behavior with the jaws and eyeball."    
   },
   {
-    imgSrc: "work_ginkgo.png", 
+    imgSrc: "ginkgo_lantern.gif", 
     title: "Dynamic Tassel Simulation",
     text: "To make lantern interactions engaging, I simulated the 2 bones in its tassel as RigidBodies, creating swishy behavior as the player aims their needle."            
   },
@@ -92,7 +92,7 @@ export default function Ginkgo()
                   Steam
                 </a>
               </div>
-            <DetailsGroup groupName="Sewable Cloth Rigging Tool" details={scatterToolDetails} />
+            <DetailsGroup groupName="Sewable Cloth Rigging Tool" details={clothToolDetails} />
             <DetailsGroup groupName="Chase Yokai" details={chaseYokaiDetails} />
             <DetailsGroup groupName="Spider Yokai" details={spiderYokaiDetails} />
             <DetailsGroup groupName="Lantern Yokai" details={lanternYokaiDetails} />
