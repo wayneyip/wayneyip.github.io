@@ -6,7 +6,7 @@ export default function DetailsGroup({ groupName, details })
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 				{details.map((detail, index) => (
 					<div key={detail.title}>
-						<img src={detail.imgSrc} alt={detail.title}/>
+						<img className="w-full" src={detail.imgSrc} alt={detail.title}/>
 						<h2 className="my-2 font-medium">{detail.title}</h2>
 	        	<p>{detail.text}</p>
 					</div>
