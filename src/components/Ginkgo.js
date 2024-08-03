@@ -74,24 +74,37 @@ export default function Ginkgo()
         <div className="flex-grow">
           <div className="container max-w-screen-lg mx-auto py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Ginkgo</h1>
-              <p className="text-left">Inspired by East Asian horror, Ginkgo is a first-person horror game where you use a magic needle to solve puzzles and outsmart surreal monsters.</p>
+            <p className="text-left">Inspired by East Asian horror, Ginkgo is a first-person horror game where you use a magic needle to solve puzzles and outsmart surreal monsters.</p>
+            <br/>
+            <iframe 
+              className="mb-20"
+              src="https://www.youtube.com/embed/EBELVAvd1g4" 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; 
+              autoplay; 
+              clipboard-write; 
+              encrypted-media; 
+              gyroscope; 
+              picture-in-picture; 
+              web-share" 
+              allowFullScreen>
+            </iframe>
+            <div className="text-left mb-20">
+              <p><span className="font-medium">Role:</span> Art Lead</p>
+              <p><span className="font-medium">Platforms:</span> Windows, macOS</p>
+              <p><span className="font-medium">Software:</span> Unreal Engine 4, Maya</p>
               <br/>
-              <img className="w-full mx-auto mb-8" src="work_ginkgo.png" alt="Ginkgo"/>
-              <div className="text-left mb-20">
-                <p><span className="font-medium">Role:</span> Art Lead</p>
-                <p><span className="font-medium">Platforms:</span> Windows, macOS</p>
-                <p><span className="font-medium">Software:</span> Unreal Engine 4, Maya</p>
-                <br/>
-                <p>I worked on this project as the Art Lead over 1 year, directing a team of 10 artists.</p>
-                <br/>
-                <a
-                  href="https://store.steampowered.com/app/1335030/Ginkgo/"
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="mr-5 py-2 px-6 text-white text-lg bg-green-500 hover:bg-green-600">
-                  Steam
-                </a>
-              </div>
+              <p>I worked on this project as the Art Lead over 1 year, directing a team of 10 artists.</p>
+              <br/>
+              <a
+                href="https://store.steampowered.com/app/1335030/Ginkgo/"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="mr-5 py-2 px-6 text-white text-lg bg-green-500 hover:bg-green-600">
+                Steam
+              </a>
+            </div>
             <DetailsGroup groupName="Sewable Cloth" details={clothToolDetails} />
             <DetailsGroup groupName="Chase Yokai" details={chaseYokaiDetails} />
             <DetailsGroup groupName="Spider Yokai" details={spiderYokaiDetails} />
