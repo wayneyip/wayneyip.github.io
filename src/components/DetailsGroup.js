@@ -12,7 +12,7 @@ export default function DetailsGroup({ groupName, details })
 				{details.map((detail, index) => (
 					<div key={detail.title}>
 						{getExtension(detail.imgSrc) == 'mp4'
-							? <video className="w-full" autoPlay loop muted> 
+							? <video className="w-full" autoPlay loop muted playsInline> 
 		            	<source src={detail.imgSrc} type="video/mp4" />
 		          	</video>
 							: <img className="w-full" src={detail.imgSrc} alt={detail.title}/>
