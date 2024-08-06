@@ -51,7 +51,7 @@ const foliageDetails = [
 
 const miscDetails = [
 	{
-    imgSrc: "work_pixelart.png", 
+    imgSrc: "pixel_dither.mp4", 
     title: "Dithering",
     text: "Not used for the main shot above. I included this feature to support future characters with shaggy fur, sand, or other rough surfaces."            
   },
