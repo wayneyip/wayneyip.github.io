@@ -5,7 +5,7 @@ import Footer from './Footer.js';
 
 const outlineDetails = [
   {
-    imgSrc: "work_pixelart.png", 
+    imgSrc: "pixel_vertcolors.png", 
     title: "Defined by Vertex Colors",
     text: "By painting vertex colors, the artist gets to define where outlines are drawn, which gives more stable and controllable results than the traditional depth- or normals-based outlines."    
   },
@@ -20,7 +20,7 @@ const outlineDetails = [
     text: "Outlines are realtime-lit in the main light's direction. To avoid visual clutter, I applied this only to the outer outlines of characters."    
   },
   {
-    imgSrc: "work_pixelart.png", 
+    imgSrc: "pixel_outlinegraph.png", 
     title: "Full Shader Graph",
     text: "The messy areas are from sampling the four neighboring pixels, which is essential for crisp 1-pixelwide outlines."    
   },
@@ -43,7 +43,7 @@ const foliageDetails = [
     text: "Foliage is darkened near the camera, giving a nice definition to the foreground. To get a stepped color gradient, I smoothstepped and posterized the depth value."    
   },
   {
-    imgSrc: "work_pixelart.png", 
+    imgSrc: "pixel_foliagegraph.png", 
     title: "Full Shader Graph",
     text: "Includes wind animation in the vertex shader, and toon shading in the fragment shader."    
   },
@@ -70,7 +70,7 @@ export default function Pixelart()
         <div className="flex-grow">
           <div className="container max-w-screen-lg mx-auto py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">3D Pixel Art Shader Showcase</h1>
-            <video className="w-full mx-auto mb-8" controls> 
+            <video className="w-full mx-auto mb-8" autoPlay loop muted> 
             	<source src="pixelart_mainshot.mp4" type="video/mp4" />
           	</video>
             <div className="text-left mb-12">
