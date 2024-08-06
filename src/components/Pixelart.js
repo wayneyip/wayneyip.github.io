@@ -12,7 +12,7 @@ const outlineDetails = [
   {
     imgSrc: "pixel_outlinepass.png", 
     title: "1-Pixel Outlines",
-    text: "Outlines are drawn by sampling the four orthogonal neighbours of each pixel, never diagonal, resulting in the characteristic 1-pixel-wide outlines found in pixel art."    
+    text: "Outlines are drawn by sampling the four orthogonal neighbours of each pixel, resulting in the 1-pixel-wide outlines commonly found in pixel art."    
   },
   {
     imgSrc: "pixel_lightpass.png", 
@@ -30,7 +30,7 @@ const miscDetails = [
 	{
     imgSrc: "pixel_env_foliage.mp4", 
     title: "Foreground Darkening",
-    text: "Foliage is darkened near the camera, giving a nice definition to the foreground. To get a stepped color gradient on the foliage, I smoothstepped and posterized the depth value."    
+    text: "Foliage is darkened near the camera, giving some definition to the foreground. To get a stepped color gradient on the foliage, I smoothstepped and posterized the depth value."    
   },
   {
     imgSrc: "pixel_vfx_bubbles.mp4", 
@@ -45,7 +45,7 @@ const miscDetails = [
   {
     imgSrc: "pixel_models.png", 
     title: "Models, Rigs and Animations",
-    text: "I modeled, rigged and animated these two creatures in Maya! They were first designed for my pixel art Instagram."    
+    text: "I modeled, rigged and animated these two creatures in Maya. They were first designed for my pixel art Instagram."    
   },
 ]
 
