@@ -11,12 +11,12 @@ const outlineDetails = [
   },
   {
     imgSrc: "pixel_outlinepass.png", 
-    title: "1-Pixel Outlines",
-    text: "Outlines are drawn by sampling the four orthogonal neighbours of each pixel, resulting in the 1-pixel-wide outlines commonly found in pixel art."    
+    title: "Single-Pixel Edge Detection",
+    text: "Outlines are drawn by sampling the four orthogonal neighbors of each pixel, resulting in the 1-pixel-wide outlines commonly found in pixel art."    
   },
   {
     imgSrc: "pixel_lightpass.png", 
-    title: "Colored by Lights",
+    title: "Shaded by Lights",
     text: "Outlines are realtime-lit in the main light's direction. To avoid visual clutter, I applied the lighting effect only to the outer outlines of characters."    
   },
   {
@@ -27,20 +27,20 @@ const outlineDetails = [
 ]
 
 const miscDetails = [
-	{
-    imgSrc: "pixel_env_foliage.mp4", 
-    title: "Foreground Darkening",
-    text: "Foliage is darkened near the camera, giving some definition to the foreground. To get a stepped color gradient on the foliage, I smoothstepped and posterized the depth value."    
-  },
   {
     imgSrc: "pixel_vfx_bubbles.mp4", 
     title: "Fake Metaballs",
-    text: "To mimic the goopy look of metaballs, I used a particle system of simple spheres -- squashed and stretched with animation curves -- thereby avoiding the performance cost of true metaball shaders."    
+    text: "To mimic the goopy look of metaballs at a fraction of the performance cost, I just squashed and stretched some spheres in a particle system. At a distance, the rim lighting helps to sell the illusion of bubbles sticking together."    
+  },
+	{
+    imgSrc: "pixel_env_foliage.mp4", 
+    title: "Foreground Darkening",
+    text: "Foliage is darkened near the camera, giving definition to the foreground. To get this effect, I smoothstepped and posterized the scene depth sampled by the foliage shader."    
   },
 	{
     imgSrc: "pixel_dither.mp4", 
     title: "Dithering",
-    text: "Not used for the main shot above. I included this feature to support future characters with shaggy fur, sand, or other rough surfaces."            
+    text: "Not used for the main shot above. I included this feature to support future characters with shaggy fur, sand, and other rough surfaces."            
   },
   {
     imgSrc: "pixel_models.png", 
@@ -64,12 +64,12 @@ export default function Pixelart()
               <p><span className="font-medium">Role:</span> Solo Developer and Artist</p>
               <p><span className="font-medium">Tech:</span> Unity (Universal Render Pipeline), Shader Graph, C#, Maya, GIMP</p>
               <br/>
-              <p>My showcase of a 3D scene that emulates 2D Pokémon sprites from the Nintendo DS era, with 1-pixelwide outlines lit by the sun.</p>
+              <p>My showcase of a 3D scene that emulates 2D Pokémon sprites from the Nintendo DS era, with 1-pixel-wide outlines lit by the sun.</p>
               <br/>
-              <p>All assets shown are mine -- shaders, character designs, models, rigs, animations, textures, VFX, UI, and font -- only the human uses a Mixamo rig and animation.</p>
+              <p>All assets shown are mine -- shaders, character designs, models, rigs, animations, textures, VFX, UI, and font. Only the human uses a Mixamo rig and animation.</p>
             </div>
             <DetailsGroup groupName="Pixel Art Outline Shader" details={outlineDetails} />
-            <DetailsGroup groupName="Miscellaneous" details={miscDetails} />
+            <DetailsGroup groupName="Miscellaneous Effects" details={miscDetails} />
           </div>
         </div>
       <BackToHome />
