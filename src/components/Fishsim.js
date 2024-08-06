@@ -12,17 +12,17 @@ const details = [
   {
     imgSrc: "fishsim_fish.gif", 
     title: "Fish Shader with Caustic Projections",
-    text: "I customised the default three.js lambert for the fish. It performs a sine wave animation on the vertex shader, and samples a noise texture in world space for the caustics lighting effect."            
+    text: "To emulate caustic lighting, the fish shader samples a noise texture in world space. Also, each fish is assigned a different offset for its sine wave animation, so that they don't swim in sync."            
   },
   {
     imgSrc: "fishsim_surface.gif", 
     title: "Water Surface Shader with Caustic Reflections",
-    text: "Using two samples of a normal map and some math tricks, I landed on a water surface that faces downwards but picks up specular highlights from the directional light above."    
+    text: "Using two samples of a normal map and some math tricks, I created a water surface that faces downwards but picks up specular highlights from the directional light above."    
   },
   {
     imgSrc: "fishsim_godrays.gif", 
-    title: "Fast Procedural God Ray Shader",
-    text: "God rays are faked with a single cone mesh, sampling a noise texture in polar coordinates that shift over time."    
+    title: "Low-Cost God Rays Shader",
+    text: "I derived a way to fake god rays with a simple cone mesh. The shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
   },
 ]
 
