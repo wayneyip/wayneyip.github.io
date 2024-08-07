@@ -1,15 +1,15 @@
 export default function DetailWithLink({ imgSrc, imgAlt, title, subtitle, text, link, linkLabel })
 {
   return (
-    <div className="flex mt-10">
-      <img className="w-2/3 pr-10" src={imgSrc} alt={title}/>
-      <div className="flex-col text-left">
+    <div className="flex flex-col md:flex-row mb-12">
+      <img className="w-full md:w-2/3 md:pr-10 pb-4 md:pb-0" src={imgSrc} alt={title}/>
+      <div className="md:text-left">
         <h2 className="mb-2 text-xl font-medium">{title}</h2>
         <h2 className="mb-2 text-lg">{subtitle}</h2>
-        <ul className="mb-10 list-disc list-inside">
-        {text.map((bullet, index) => (
-        	<li key={bullet}>{bullet}</li>
-      	))}
+        <ul className="mb-10 xs:ml-12 sm:ml-32 md:ml-0 text-left list-disc list-inside">
+          {text.map((bullet, index) => (
+          	<li key={bullet}>{bullet}</li>
+        	))}
       	</ul>
         <a
           href={link}

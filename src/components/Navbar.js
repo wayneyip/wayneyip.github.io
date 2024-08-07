@@ -6,8 +6,8 @@ export default function Navbar()
 {
   return (
     <nav className="bg-gray-800 px-2 pt-10 pb-5">
-      <div className="container max-w-screen-lg mx-auto flex justify-between items-center">
-        <div className="text-left">
+      <div className="container max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="md:text-left">
           <div className="text-white text-3xl font-bold">
             Wayne Yip
           </div>
@@ -15,7 +15,7 @@ export default function Navbar()
             3D Developer
           </div>
         </div>
-        <div className="space-x-4">
+        <div className="mt-10 space-x-4">
           <button className="text-white px-4 py-2 hover:bg-blue-700 transition duration-300">
             <Link to="/">Work</Link>
           </button>

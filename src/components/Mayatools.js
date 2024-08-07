@@ -60,7 +60,7 @@ export default function Mayatools()
     <div className="flex flex-col min-h-screen">
       <Navbar />
         <div className="flex-grow">
-          <div className="container max-w-screen-lg mx-auto py-20">
+          <div className="container max-w-screen-lg mx-auto px-4 py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Maya Tools</h1>
             {details.map((detail, index) => (
               <DetailWithLink 
