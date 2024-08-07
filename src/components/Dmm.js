@@ -11,7 +11,7 @@ const scatterToolDetails = [
     text: "This tool empowered the set dressing around all of Disney Melee Mania's battle arenas, from little forests to bunches of candy canes."    
   },
   {
-    imgSrc: "dmm_tooldemo.gif", 
+    imgSrc: "dmm_tooldemo.mp4", 
     title: "One-Click Instant Generation",
     text: "This tool reduced the set dressing work for each battle arena from hours down to seconds, as 3D artists no longer had to fuss over each object's placement within the railings."            
   },
@@ -42,7 +42,7 @@ const characterDetails = [
 
 const charRigDetails = [
   {
-    imgSrc: "dmm_bingbongrig.gif", 
+    imgSrc: "dmm_bingbongrig.mp4", 
     title: "Abstract Bing Bong Rig",
     text: "I took charge of rigging Abstract Bing Bong, whose logic-defying anatomy required a lot of unconventional technical setup for animation."    
   },
