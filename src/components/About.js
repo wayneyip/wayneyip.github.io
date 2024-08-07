@@ -6,9 +6,9 @@ export default function About()
 	return (
 		<div className="flex flex-col min-h-screen">
 			<Navbar />
-				<div className="bg-white flex-grow">
-					<div className="container max-w-screen-lg mx-auto flex py-20 md:flex-row flex-col">
-			      <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+				<div className="flex-grow">
+					<div className="container max-w-screen-lg mx-auto flex px-4 py-20 md:flex-row flex-col">
+			      <div className="lg:flex-grow md:w-1/2 md:pr-16 lg:pr-24 md:items-start text-left mb-16">
 			        <h1 className="mb-4 text-3xl title-font font-medium text-gray-800">
 			          About
 			        </h1>
@@ -27,9 +27,9 @@ export default function About()
 		            Resume
 		          </a>
 			      </div>
-			      <div className="">
+			      <div className="mx-auto">
 			        <img
-			          className="object-cover object-center max-w-sm"
+			          className="max-w-sm"
 			          alt="wayne"
 			          src="about_wayne.jpg"
 			        />
