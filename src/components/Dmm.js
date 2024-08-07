@@ -86,8 +86,6 @@ export default function Dmm()
               	<li><span className="font-medium">Managed outsourcers</span> on delivery and iteration of 20+ Disney-Pixar character rigs over 18 months.</li>
 								<li><span className="font-medium">Implemented all character assets</span> in close collaboration with animators, engineers and VFX artists.</li>
 								<li><span className="font-medium">Optimized performance</span> on mobile devices with Xcode, bringing low-end iOS devices from 20 to 60 FPS.</li>
-								<li><span className="font-medium">Developed tools</span> in C# to streamline art workflows in Unity.</li>
-								<li><span className="font-medium">Created character rigs</span> for characters with unconventional anatomy.</li>
             	</ul>
               <br/>
               <br/>
@@ -99,7 +97,7 @@ export default function Dmm()
                 App Store
               </a>
             </div>
-            <DetailsGroup groupName="Procedural Scatter Tool with Splines" details={scatterToolDetails} />
+            <DetailsGroup groupName="Procedural Scatter Tool for Splines" details={scatterToolDetails} />
             <DetailsGroup groupName="Character Asset Management and Implementation" details={characterDetails} />
             <DetailsGroup groupName="Abstract Bing Bong Rig" details={charRigDetails} />
           </div>

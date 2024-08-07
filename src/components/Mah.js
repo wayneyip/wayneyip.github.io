@@ -73,9 +73,8 @@ export default function Mah()
                 <ul className="list-disc list-inside leading-loose">
                 	<li><span className="font-medium">Established workflows and standards</span> for performance profiling, Python scripting, and VFX creation.</li>
 									<li><span className="font-medium">Organized regular optimization passes</span> on WebGL and Android, maintaining budgets for FPS, memory and loading times every milestone.</li>
-									<li><span className="font-medium">Streamlined character LOD creation pipeline</span> by developing Maya tools in Python to automate texture baking, skinning, and exporting.</li>
-									<li><span className="font-medium">Developed Blender plugin</span> in Python for artists to rapidly iterate over 5000 image renders across 4 months.</li>
-									<li><span className="font-medium">Researched and implemented Unity tools</span> for accelerating art workflows and supporting gameplay features.</li>
+									<li><span className="font-medium">Streamlined workflows for artists</span> by developing automation tools in Maya and Blender.</li>
+									<li><span className="font-medium">Researched and implemented Unity plugins</span> for accelerating art workflows and supporting gameplay features.</li>
               	</ul>
                 <br/>
                 <br/>
