@@ -29,25 +29,15 @@ const scatterToolDetails = [
 
 const characterDetails = [
   {
-    imgSrc: "work_grizzly.png", 
+    imgSrc: "dmm_animintro.mp4", 
     title: "Outsourcer Rig Management",
-    text: "I guided outsourcers through the development of all character rigs, which helped us nail down the flowing motion of Elsa’s dress ribbons and Meilin Lee’s expressive smiles, among many other effects."    
+    text: "Over 18 months, I guided outsourcers through the development of all character rigs, which helped us nail down the flowing motion of Elsa’s dress ribbons, among many other complex character effects."    
   },
   {
-    imgSrc: "work_grizzly.png", 
-    title: "Custom Camera Animation Setup",
-    text: "I also established the Maya-to-Unity pipeline for custom camera animations that empower all of the game’s dynamic character intros."            
-  },
-  {
-    imgSrc: "work_grizzly.png", 
-    title: "Character Asset Implementation",
+    imgSrc: "dmm_anim_cropped.mp4", 
+    title: "Animation Implementation",
     text: "I implemented all character rigs and animations in Unity, working closely with animators, engineers and VFX artists. Many animations had multiple phases tied to VFX and code triggers, so it was essential to coordinate timings and fix bugs."            
   },
-  {
-    imgSrc: "work_grizzly.png", 
-    title: "Avatar Mask Scripting",
-    text: "I extended our Animancer setup with C# scripts to incorporate avatar masks, allowing our characters to run and attack smoothly for a dynamic battlefield."            
-  }
 ]
 
 const charRigDetails = [
@@ -57,7 +47,7 @@ const charRigDetails = [
     text: "I took charge of rigging Abstract Bing Bong, whose logic-defying anatomy required a lot of unconventional technical setup for animation."    
   },
   {
-    imgSrc: "work_grizzly.png", 
+    imgSrc: "dmm_bingbongintro.mp4", 
     title: "Rig in Action",
     text: "This custom rig enabled our animators to achieve some truly zany facial animations for this special Bing Bong skin."            
   },
@@ -109,7 +99,7 @@ export default function Dmm()
                 App Store
               </a>
             </div>
-            <DetailsGroup groupName="Spline-Based Scatter Tool" details={scatterToolDetails} />
+            <DetailsGroup groupName="Procedural Scatter Tool with Splines" details={scatterToolDetails} />
             <DetailsGroup groupName="Character Asset Management and Implementation" details={characterDetails} />
             <DetailsGroup groupName="Abstract Bing Bong Rig" details={charRigDetails} />
           </div>
