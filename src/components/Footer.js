@@ -20,7 +20,7 @@ export default function Footer()
         <div className="mt-12 md:mt-0 flex flex-row space-x-4">
         	{links.map((link, index) => (
     				<a key={index} href={link.linkUrl} target="_blank" rel="noopener noreferrer">
-            	<img src={link.iconUrl} alt={link.title} className="w-6 h-6" />
+            	<img src={link.iconUrl} alt={link.title} className="w-6 h-6 hover:brightness-75" />
           	</a>
     			))}
         </div>

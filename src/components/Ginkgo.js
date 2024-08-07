@@ -81,10 +81,10 @@ export default function Ginkgo()
               className="w-full h-full"
                 src="https://www.youtube.com/embed/EBELVAvd1g4" 
                 title="Ginkgo | NEW Student Game Trailer Reveal | #USCGamesEXPO 2020" 
-                frameborder="0" 
+                frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
+                referrerPolicy="strict-origin-when-cross-origin" 
+                allowFullScreen>
               </iframe>
             </div>
             <div className="text-left mb-20">
