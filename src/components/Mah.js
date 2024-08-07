@@ -30,12 +30,12 @@ const pfpGenDetails = [
 
 const dangerZoneDetails = [
   {
-    imgSrc: "work_mah.jpg", 
-    title: "Custom Render Ordering",
+    imgSrc: "mah_dangerzone.mp4", 
+    title: "Render Pipeline Customization",
     text: "To implement the gameplay-critical Danger Zone shader, I worked closely with all production departments (Art, Engineering, Design). Since the shader gets drawn over all opaques, I devised a custom rendering order to handle the visibility of gameplay elements (characters, projectiles, and environments)."    
   },
   {
-    imgSrc: "work_mah.jpg", 
+    imgSrc: "mah_dangerzone_glitch.mp4", 
     title: "Tile-Glitching Shader Effect",
     text: "I created the shader’s tile-glitching effect that suggests the environment dissolving into cyber-space, and supported general development of the shader by my teammate Dedrick Koh."            
   }
