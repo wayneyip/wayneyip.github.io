@@ -59,7 +59,7 @@ export default function Dmm()
     <div className="flex flex-col min-h-screen">
       <Navbar />
         <div className="flex-grow">
-          <div className="container max-w-screen-lg mx-auto py-20">
+          <div className="container max-w-screen-lg mx-auto px-4 py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Disney Melee Mania</h1>
             <p className="text-left">Disney Melee Mania is a 3v3 arena brawler video game featuring Disney and Pixar characters.</p>
             <br/>

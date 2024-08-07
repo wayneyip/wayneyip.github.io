@@ -32,7 +32,7 @@ export default function Fishsim()
     <div className="flex flex-col min-h-screen">
       <Navbar />
         <div className="flex-grow">
-          <div className="container max-w-screen-lg mx-auto py-20">
+          <div className="container max-w-screen-lg mx-auto px-4 py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Three.js Fish Simulation</h1>
               <img className="w-full mx-auto mb-8" src="fishsim_main.gif" alt="Three.js Fish Simulation"/>
               <div className="text-left mb-20">

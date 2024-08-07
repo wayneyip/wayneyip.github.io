@@ -72,7 +72,7 @@ export default function Ginkgo()
     <div className="flex flex-col min-h-screen">
       <Navbar />
         <div className="flex-grow">
-          <div className="container max-w-screen-lg mx-auto py-20">
+          <div className="container max-w-screen-lg mx-auto px-4 py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Ginkgo</h1>
             <p className="text-left">Inspired by East Asian horror, Ginkgo is a first-person horror game where you use a magic needle to solve puzzles and outsmart surreal monsters.</p>
             <br/>

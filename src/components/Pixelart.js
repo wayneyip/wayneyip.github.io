@@ -55,7 +55,7 @@ export default function Pixelart()
     <div className="flex flex-col min-h-screen">
       <Navbar />
         <div className="flex-grow">
-          <div className="container max-w-screen-lg mx-auto py-20">
+          <div className="max-w-screen-lg mx-auto px-4 py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">3D Pixel Art Shader Showcase</h1>
             <video className="w-full mx-auto mb-8" autoPlay loop muted playsInline> 
             	<source src="pixelart_mainshot.mp4" type="video/mp4" />
