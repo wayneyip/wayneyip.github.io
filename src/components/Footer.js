@@ -8,12 +8,22 @@ export default function Footer()
 {
   return (
     <footer className="bg-gray-800 px-4 py-20">
-      <div className="max-w-screen-lg mx-auto flex justify-end space-x-4">
-      	{links.map((link, index) => (
-  				<a key={index} href={link.linkUrl} target="_blank" rel="noopener noreferrer">
-          	<img src={link.iconUrl} alt={link.title} className="w-6 h-6" />
-        	</a>
-  			))}
+      <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="md:text-left">
+          <p className="text-gray-400">
+            Built with React and Tailwind CSS.
+            <br/>
+            <br/>
+            Contact me at: <a className="underline text-blue-400" href="mailto:wqyip97@gmail.com">wqyip97@gmail.com</a>
+          </p>
+        </div>
+        <div className="mt-12 md:mt-0 flex flex-row space-x-4">
+        	{links.map((link, index) => (
+    				<a key={index} href={link.linkUrl} target="_blank" rel="noopener noreferrer">
+            	<img src={link.iconUrl} alt={link.title} className="w-6 h-6" />
+          	</a>
+    			))}
+        </div>
       </div>
     </footer>
   )

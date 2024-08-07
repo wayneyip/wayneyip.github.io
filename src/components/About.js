@@ -16,8 +16,6 @@ export default function About()
 			          Graduate of Computer Science Games program at the University of Southern California. I'm a fan of shaders, tools, procedural animation, and just about any use of math and logic to drive art and design.  
 			          <br/>
 			          <br/>Outside of work, I'm on a journey to design 100 original Pokémon in pixel art. And I climb rocks twice a week.
-			          <br/>
-			          <br/>Contact me at: <a className="underline" href="mailto:wqyip97@gmail.com">wqyip97@gmail.com</a>
 			        </p>
 		          <a
 		            href="Resume_WayneYip_2024.pdf"
