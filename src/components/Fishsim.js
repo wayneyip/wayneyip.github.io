@@ -5,24 +5,24 @@ import Footer from './Footer.js';
 
 const details = [
   {
-    imgSrc: "work_fish.png", 
+    imgSrc: "fishsim_rayavoid.gif", 
     title: "Boids with Ray Avoidance",
     text: "Each fish's movement is simulated using the boids flocking algorithm. I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
   },
   {
-    imgSrc: "work_fish.png", 
+    imgSrc: "fishsim_fish.gif", 
     title: "Fish Shader with Caustic Projections",
-    text: "I customised the default three.js lambert for the fish. It performs a sine wave animation on the vertex shader, and samples a noise texture in world space for the caustics lighting effect."            
+    text: "To emulate caustic lighting, the fish shader samples a noise texture in world space. Also, each fish is assigned a different offset for its sine wave animation, so that they don't swim in sync."            
   },
   {
-    imgSrc: "work_fish.png", 
+    imgSrc: "fishsim_surface.gif", 
     title: "Water Surface Shader with Caustic Reflections",
-    text: "Using two samples of a normal map and some math tricks, I landed on a water surface that faces downwards but picks up specular highlights from the directional light above."    
+    text: "Using two samples of a normal map and some math tricks, I created a water surface that faces downwards but picks up specular highlights from the directional light above."    
   },
   {
-    imgSrc: "work_fish.png", 
-    title: "Fast Procedural God Ray Shader",
-    text: "God rays are faked with a single cone mesh, sampling a noise texture in polar coordinates that shift over time."    
+    imgSrc: "fishsim_godrays.gif", 
+    title: "Low-Cost God Rays Shader",
+    text: "I derived a way to fake god rays with a simple cone mesh. The shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
   },
 ]
 
@@ -34,7 +34,7 @@ export default function Fishsim()
         <div className="flex-grow">
           <div className="container max-w-screen-lg mx-auto py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Three.js Fish Simulation</h1>
-              <img className="w-full mx-auto mb-8" src="work_fish.png" alt="Three.js Fish Simulation"/>
+              <img className="w-full mx-auto mb-8" src="fishsim_main.gif" alt="Three.js Fish Simulation"/>
               <div className="text-left mb-20">
                 <p><span className="font-medium">Role:</span> Solo Developer</p>
                 <p><span className="font-medium">Tech:</span> Three.js, GLSL, Node.js, Vite, Vercel</p>
