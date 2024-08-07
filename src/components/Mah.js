@@ -12,7 +12,7 @@ const lodToolsDetails = [
   {
     imgSrc: "mah_lod2.png", 
     title: "Time Saved",
-    text: "This tool suite reduced the work of LOD generation from 3 weeks down to 1 week for the 3D team, accelerating the art team's output of hero characters. You can read more about it in this Medium article."            
+    text: "This tool suite reduced the work of LOD generation from 3 weeks down to 1 week for the 3D team, accelerating the art team's output of hero characters."            
   }
 ]
 
@@ -25,7 +25,7 @@ const pfpGenDetails = [
   {
     imgSrc: "mah_tool.png", 
     title: "Quality-of-Life Features",
-    text: "I created this plugin in Python with a host of features, from image recoloring to various search filters, based on the art team's requests and feedback. You can read more about them in this Medium article."  }
+    text: "I created this plugin in Python with a host of features, from image recoloring to various search filters, based on the art team's requests and feedback."  }
 ]
 
 const dangerZoneDetails = [
@@ -56,10 +56,10 @@ export default function Mah()
                 className="w-full h-full"
                   src="https://www.youtube.com/embed/wBT7RxdP9wM" 
                   title="[Official] Open Beta: Mighty Road | Mighty Action Heroes" 
-                  frameborder="0" 
+                  frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerpolicy="strict-origin-when-cross-origin" 
-                  allowfullscreen>
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen>
                 </iframe>
               </div>
               <div className="text-left mb-20">
