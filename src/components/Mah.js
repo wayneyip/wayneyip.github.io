@@ -12,7 +12,7 @@ const lodToolsDetails = [
   {
     imgSrc: "mah_lod2.png", 
     title: "Time Saved",
-    text: "This tool suite reduced the work of LOD generation from 3 weeks down to 1 week for the 3D team, accelerating the art team's output of hero characters. You can read more about it in this Medium article."            
+    text: "This tool suite reduced the work of LOD generation from 3 weeks down to 1 week for the 3D team, accelerating the art team's output of hero characters."            
   }
 ]
 
@@ -25,7 +25,7 @@ const pfpGenDetails = [
   {
     imgSrc: "mah_tool.png", 
     title: "Quality-of-Life Features",
-    text: "I created this plugin in Python with a host of features, from image recoloring to various search filters, based on the art team's requests and feedback. You can read more about them in this Medium article."  }
+    text: "I created this plugin in Python with a host of features, from image recoloring to various search filters, based on the art team's requests and feedback."  }
 ]
 
 const dangerZoneDetails = [
@@ -56,10 +56,10 @@ export default function Mah()
                 className="w-full h-full"
                   src="https://www.youtube.com/embed/wBT7RxdP9wM" 
                   title="[Official] Open Beta: Mighty Road | Mighty Action Heroes" 
-                  frameborder="0" 
+                  frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerpolicy="strict-origin-when-cross-origin" 
-                  allowfullscreen>
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen>
                 </iframe>
               </div>
               <div className="text-left mb-20">
@@ -73,9 +73,8 @@ export default function Mah()
                 <ul className="list-disc list-inside leading-loose">
                 	<li><span className="font-medium">Established workflows and standards</span> for performance profiling, Python scripting, and VFX creation.</li>
 									<li><span className="font-medium">Organized regular optimization passes</span> on WebGL and Android, maintaining budgets for FPS, memory and loading times every milestone.</li>
-									<li><span className="font-medium">Streamlined character LOD creation pipeline</span> by developing Maya tools in Python to automate texture baking, skinning, and exporting.</li>
-									<li><span className="font-medium">Developed Blender plugin</span> in Python for artists to rapidly iterate over 5000 image renders across 4 months.</li>
-									<li><span className="font-medium">Researched and implemented Unity tools</span> for accelerating art workflows and supporting gameplay features.</li>
+									<li><span className="font-medium">Streamlined workflows for artists</span> by developing automation tools in Maya and Blender.</li>
+									<li><span className="font-medium">Researched and implemented Unity plugins</span> for accelerating art workflows and supporting gameplay features.</li>
               	</ul>
                 <br/>
                 <br/>
