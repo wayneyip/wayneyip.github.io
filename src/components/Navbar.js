@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import Work from './Work.js';
-import About from './About.js';
 
 export default function Navbar() 
 {
