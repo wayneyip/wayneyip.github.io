@@ -5,22 +5,22 @@ import Footer from './Footer.js';
 
 const details = [
   {
-    imgSrc: "fishsim/rayavoid.gif", 
+    imgSrc: "fishsim/rayavoid.mp4", 
     title: "Boids with Ray Avoidance",
     text: "Each fish's movement is simulated using the boids flocking algorithm. I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
   },
   {
-    imgSrc: "fishsim/fish.gif", 
+    imgSrc: "fishsim/fish.mp4", 
     title: "Fish Shader with Caustic Projections",
     text: "To emulate caustic lighting, the fish shader samples a noise texture in world space. Also, each fish is assigned a different offset for its sine wave animation, so that they don't swim in sync."            
   },
   {
-    imgSrc: "fishsim/surface.gif", 
+    imgSrc: "fishsim/surface.mp4", 
     title: "Water Surface Shader with Caustic Reflections",
     text: "Using two samples of a normal map and some math tricks, I created a water surface that faces downwards but picks up specular highlights from the directional light above."    
   },
   {
-    imgSrc: "fishsim/godrays.gif", 
+    imgSrc: "fishsim/godrays.mp4", 
     title: "Low-Cost God Rays Shader",
     text: "I derived a way to fake god rays with a simple cone mesh. The shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
   },
@@ -34,7 +34,9 @@ export default function Fishsim()
         <div className="flex-grow">
           <div className="container max-w-screen-lg mx-auto px-4 py-20">
             <h1 className="mb-8 text-left text-3xl font-medium text-gray-800">Three.js Fish Simulation</h1>
-              <img className="w-full mx-auto mb-8" src="fishsim/main.gif" alt="Three.js Fish Simulation"/>
+              <video className="w-full mx-auto mb-8" autoPlay loop muted playsInline> 
+                <source src='fishsim/main.mp4' type="video/mp4" />
+              </video>
               <div className="text-left mb-20">
                 <p><span className="font-medium">Role:</span> Solo Developer</p>
                 <p><span className="font-medium">Tech:</span> Three.js, GLSL, Node.js, Vite, Vercel</p>
