@@ -69,7 +69,7 @@ export default function Dmm()
                 src="https://www.youtube.com/embed/m6VR64hQJ10" 
                 title="Disney Melee Mania - Apple Arcade Trailer" 
                 frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 referrerPolicy="strict-origin-when-cross-origin" 
                 allowFullScreen>
               </iframe>

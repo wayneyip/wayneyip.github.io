@@ -82,7 +82,7 @@ export default function Ginkgo()
                 src="https://www.youtube.com/embed/EBELVAvd1g4" 
                 title="Ginkgo | NEW Student Game Trailer Reveal | #USCGamesEXPO 2020" 
                 frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 referrerPolicy="strict-origin-when-cross-origin" 
                 allowFullScreen>
               </iframe>
