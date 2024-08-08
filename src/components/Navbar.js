@@ -6,10 +6,10 @@ export default function Navbar()
 {
   return (
     <nav className="bg-gray-800 px-2 pt-10 pb-5">
-      <div className="container max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div className="container max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center font-fredoka">
         <div className="md:text-left">
           <div className="text-white text-3xl font-bold hover:text-gray-300">
-            <Link to="/">Wayne Yip</Link>
+            <Link to="/">WAYNE YIP</Link>
           </div>
           <div className="text-gray-400 text-lg font-normal pt-2">
             3D Developer

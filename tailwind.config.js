@@ -6,6 +6,13 @@ module.exports = {
   theme: {
     extend: {},
   },
+  theme: {
+    extend: {
+      fontFamily: {
+        fredoka: ["Fredoka", "sans-serif"],
+      },
+    },
+  },
   plugins: [],
 }
 
