@@ -6,22 +6,22 @@ import Footer from './Footer.js';
 
 const clothToolDetails = [
   {
-    imgSrc: "ginkgo/cloth.gif", 
+    imgSrc: "ginkgo/cloth.mp4", 
     title: "Visual Result",
     text: "Sewing cloth together is Ginkgo's main game mechanic, used to create paths and hide from enemies. I created a rigging tool to ensure that we could deliver on the visual impact of such a unique mechanic."
   },
   {
-    imgSrc: "ginkgo/cloth_rig.gif", 
+    imgSrc: "ginkgo/cloth_rig.mp4", 
     title: "Automatic Weight Painting Algorithm",
     text: "To ensure smooth deformation when sewing, I developed an algorithm to skin the cloth mesh with polynomial distribution in a single click."    
   },
   {
-    imgSrc: "ginkgo/cloth_curve.gif", 
+    imgSrc: "ginkgo/cloth_curve.mp4", 
     title: "Adjustable Power Curvature",
     text: "To rapidly prototype different cloth-stretching behaviors, I designed the algorithm to allow user input of different powers for different curvatures: linear, quadratic, cubic, etc."            
   },
   {
-    imgSrc: "ginkgo/cloth_ledge.gif", 
+    imgSrc: "ginkgo/cloth_ledge.mp4", 
     title: "Adjustable Ledge Distance",
     text: "Since much of our cloth rested on ledges in the game, I designed the algorithm to account for variable ledge distances, painting ledge areas as 100% solid and scaling the remaining gradients accordingly."            
   },
@@ -29,12 +29,12 @@ const clothToolDetails = [
 
 const chaseYokaiDetails = [
   {
-    imgSrc: "ginkgo/chase.gif", 
+    imgSrc: "ginkgo/chase.mp4", 
     title: "Experimental Anatomy",
     text: "For this major antagonist creature, I directed our artists to mess with conventional anatomy, bending the knees back and removing the clavicles for an unsettling, spider-like silhouette."    
   },
   {
-    imgSrc: "ginkgo/chase_rig.gif", 
+    imgSrc: "ginkgo/chase_rig.mp4", 
     title: "IK/FK Blend Controls",
     text: "For its intense clambering motions, I set up IK/FK blending using my Kinematify autorigger, allowing our animator to switch as needed."            
   },
@@ -42,12 +42,12 @@ const chaseYokaiDetails = [
 
 const spiderYokaiDetails = [
   {
-    imgSrc: "ginkgo/spider.gif", 
+    imgSrc: "ginkgo/spider.mp4", 
     title: "Rounded Silhouette Design",
     text: "I directed our artists to distinguish this friendly creature's silhouette from the Chase Yokai using round shapes and fuzzy legs."            
   },
   {
-    imgSrc: "ginkgo/spider_rig.gif", 
+    imgSrc: "ginkgo/spider_rig.mp4", 
     title: "Curve-based Eyelid Rig",
     text: "I rigged the spider's eyelids using my Facify autorigger, allowing our animator to convey a range of expressions with a single eye."    
   },
@@ -55,12 +55,12 @@ const spiderYokaiDetails = [
 
 const lanternYokaiDetails = [
   {
-    imgSrc: "ginkgo/lantern.gif", 
+    imgSrc: "ginkgo/lantern.mp4", 
     title: "Dynamic Tassel Simulation",
     text: "To draw player attention to this tutorial creature, I simulated the 2 bones in its tassel as RigidBodies, creating swishy behavior as the player aims their needle."            
   },
   {
-    imgSrc: "ginkgo/lantern_rig.gif", 
+    imgSrc: "ginkgo/lantern_rig.mp4", 
     title: "Minimalist Rig",
     text: "I designed this rig as an exercise in efficiency, using only 3 joints to achieve stretchy behavior with the jaws and eyeball."    
   },
