@@ -8,7 +8,7 @@ export default function About()
 			<Navbar />
 				<div className="flex-grow">
 					<div className="container max-w-screen-lg mx-auto flex px-4 py-20 md:flex-row flex-col">
-			      <div className="lg:flex-grow md:w-1/2 md:pr-16 lg:pr-24 md:items-start text-left mb-16">
+			      <div className="lg:flex-grow md:w-1/2 md:pr-16 lg:pr-24 md:items-start text-center md:text-left mb-16">
 			        <h1 className="mb-4 text-3xl title-font font-medium text-gray-800">
 			          About
 			        </h1>
