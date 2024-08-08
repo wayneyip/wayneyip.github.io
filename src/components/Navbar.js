@@ -9,7 +9,7 @@ export default function Navbar()
       <div className="container max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center font-fredoka">
         <div className="text-center md:text-left">
           <div className="text-white text-3xl font-bold hover:text-gray-300">
-            <Link to="/">WAYNE YIP</Link>
+            <Link to="/">Wayne Yip</Link>
           </div>
           <div className="text-gray-400 text-lg font-normal pt-2">
             3D Developer
