@@ -18,7 +18,7 @@ export default function About()
 			          <br/>Outside of work, I'm on a journey to design 100 original Pokémon in pixel art - and I climb rocks every Friday.
 			        </p>
 		          <a
-		            href="about/Resume_WayneYip_2024.pdf"
+		            href="about/Resume_WayneYip.pdf"
 		            target="_blank" 
 		            rel="noopener noreferrer"
 		            className="py-2 px-6 text-white text-lg bg-green-500 hover:bg-green-600">
