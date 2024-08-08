@@ -5,12 +5,12 @@ import Footer from './Footer.js';
 
 const lodToolsDetails = [
   {
-    imgSrc: "mah_lodtools.png", 
+    imgSrc: "mah/lod_tools.png", 
     title: "Pipeline Automation",
     text: "For generating our character LODs, I developed a suite of Maya Python tools that automated many tedious processes across the pipeline, including texture baking, rigging and skinning, cleanup and exporting."    
   },
   {
-    imgSrc: "mah_lod2.png", 
+    imgSrc: "mah/lod_result.png", 
     title: "Time Saved",
     text: "This tool suite reduced the work of LOD generation from 3 weeks down to 1 week for the 3D team, accelerating the art team's output of hero characters."            
   }
@@ -18,24 +18,24 @@ const lodToolsDetails = [
 
 const pfpGenDetails = [
   {
-    imgSrc: "mah_bbs.png", 
+    imgSrc: "mah/bbs_result.png", 
     title: "Image Combination and Batch Rendering",
     text: "This plugin enabled 2D artists to combine their body part assets and render 5000 profile pictures at 2K resolution within 30 minutes. This allowed for rapid art iteration over 4 months to achieve the final product shown above."    
   },
   {
-    imgSrc: "mah_tool.png", 
+    imgSrc: "mah/bbs_tool.png", 
     title: "Quality-of-Life Features",
     text: "I created this plugin in Python with a host of features, from image recoloring to various search filters, based on the art team's requests and feedback."  }
 ]
 
 const dangerZoneDetails = [
   {
-    imgSrc: "mah_dangerzone.mp4", 
+    imgSrc: "mah/dangerzone_moving.mp4", 
     title: "Render Pipeline Customization",
     text: "To implement the gameplay-critical Danger Zone shader, I worked closely with all production departments (Art, Engineering, Design). Since the shader gets drawn over all opaques, I devised a custom rendering order to handle the visibility of gameplay elements (characters, projectiles, and environments)."    
   },
   {
-    imgSrc: "mah_dangerzone_glitch.mp4", 
+    imgSrc: "mah/dangerzone_glitch.mp4", 
     title: "Tile-Glitching Shader Effect",
     text: "I created the shader’s tile-glitching effect that suggests the environment dissolving into cyber-space, and supported general development of the shader by my teammate Dedrick Koh."            
   }
