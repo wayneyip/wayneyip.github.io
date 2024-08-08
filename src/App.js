@@ -1,4 +1,3 @@
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop.js';
 import Work from './components/Work.js';
