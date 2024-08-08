@@ -9,7 +9,7 @@ export default function Footer()
   return (
     <footer className="bg-gray-800 px-4 py-20">
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="md:text-left">
+        <div className="text-center md:text-left">
           <p className="text-gray-400">
             Built with React and Tailwind CSS.
             <br/>
