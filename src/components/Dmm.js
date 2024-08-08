@@ -6,22 +6,22 @@ import Footer from './Footer.js';
 
 const scatterToolDetails = [
   {
-    imgSrc: "dmm_toolresult.png", 
+    imgSrc: "dmm/tool_result.png", 
     title: "Visual Result",
     text: "This tool empowered the set dressing around all of Disney Melee Mania's battle arenas, from little forests to bunches of candy canes."    
   },
   {
-    imgSrc: "dmm_tooldemo.mp4", 
+    imgSrc: "dmm/tool_demo.mp4", 
     title: "One-Click Instant Generation",
     text: "This tool reduced the set dressing work for each battle arena from hours down to seconds, as 3D artists no longer had to fuss over each object's placement within the railings."            
   },
   {
-    imgSrc: "dmm_diagram.png", 
+    imgSrc: "dmm/tool_diagram.png", 
     title: "Dot and Cross Product Calculations",
     text: "Since our battle arenas were made with spline-based railings, I made use of some vector math to generate only points that lied within a given spline curve."            
   },
   {
-    imgSrc: "dmm_diagram2.png", 
+    imgSrc: "dmm/tool_diagram2.png", 
     title: "Intersection Avoidance with Blue Noise",
     text: "To ensure that generated trees, flowers, and other elements didn't overlap with each other, I incorporated a distance check into the algorithm that artists can easily adjust the value of."            
   },
@@ -29,12 +29,12 @@ const scatterToolDetails = [
 
 const characterDetails = [
   {
-    imgSrc: "dmm_animintro.mp4", 
+    imgSrc: "dmm/anim_intro.mp4", 
     title: "Outsourcer Rig Management",
     text: "Over 18 months, I guided outsourcers through the development of all character rigs, which helped us nail down the flowing motion of Elsa’s dress ribbons, among many other complex character effects."    
   },
   {
-    imgSrc: "dmm_anim_cropped.mp4", 
+    imgSrc: "dmm/anim_battle.mp4", 
     title: "Animation Implementation",
     text: "I implemented all character rigs and animations in Unity, working closely with animators, engineers and VFX artists. Many animations had multiple phases tied to VFX and code triggers, so it was essential to coordinate timings and fix bugs."            
   },
@@ -42,12 +42,12 @@ const characterDetails = [
 
 const charRigDetails = [
   {
-    imgSrc: "dmm_bingbongrig.mp4", 
+    imgSrc: "dmm/bingbong_rig.mp4", 
     title: "Abstract Bing Bong Rig",
     text: "I took charge of rigging Abstract Bing Bong, whose logic-defying anatomy required a lot of unconventional technical setup for animation."    
   },
   {
-    imgSrc: "dmm_bingbongintro.mp4", 
+    imgSrc: "dmm/bingbong_intro.mp4", 
     title: "Rig in Action",
     text: "This custom rig enabled our animators to achieve some truly zany facial animations for this special Bing Bong skin."            
   },

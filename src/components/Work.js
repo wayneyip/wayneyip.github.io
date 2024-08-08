@@ -3,12 +3,12 @@ import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 
 const projects = [
-  { title: 'Three.js Fish Simulation', imageUrl: 'work_fish.png', siteUrl: '/fishsim' },
-  { title: '3D Pixel Art Shader Showcase', imageUrl: 'work_pixelart.png', siteUrl: '/pixelart' },
-  { title: 'Mighty Action Heroes', imageUrl: 'work_mah.jpg', siteUrl: '/mah' },
-  { title: 'Disney Melee Mania', imageUrl: 'work_grizzly.png', siteUrl: '/dmm' },
-  { title: 'Ginkgo', imageUrl: 'work_ginkgo.png', siteUrl: '/ginkgo' },
-  { title: 'Maya Tools', imageUrl: 'work_mayatools.png', siteUrl: '/mayatools' },
+  { title: 'Three.js Fish Simulation', imageUrl: 'work/fishsim.png', siteUrl: '/fishsim' },
+  { title: '3D Pixel Art Shader Showcase', imageUrl: 'work/pixel.png', siteUrl: '/pixelart' },
+  { title: 'Mighty Action Heroes', imageUrl: 'work/mah.jpg', siteUrl: '/mah' },
+  { title: 'Disney Melee Mania', imageUrl: 'work/dmm.png', siteUrl: '/dmm' },
+  { title: 'Ginkgo', imageUrl: 'work/ginkgo.png', siteUrl: '/ginkgo' },
+  { title: 'Maya Tools', imageUrl: 'work/mayatools.png', siteUrl: '/mayatools' },
 ];
 
 export default function Home()
