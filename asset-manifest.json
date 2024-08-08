@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wayneyip.github.io/static/css/main.b098909f.css",
+    "main.js": "/wayneyip.github.io/static/js/main.8fc92d4a.js",
+    "index.html": "/wayneyip.github.io/index.html",
+    "main.b098909f.css.map": "/wayneyip.github.io/static/css/main.b098909f.css.map",
+    "main.8fc92d4a.js.map": "/wayneyip.github.io/static/js/main.8fc92d4a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b098909f.css",
+    "static/js/main.8fc92d4a.js"
+  ]
+}
