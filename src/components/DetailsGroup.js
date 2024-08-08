@@ -11,7 +11,7 @@ export default function DetailsGroup({ groupName, details })
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
 				{details.map((detail, index) => (
 					<div key={detail.title}>
-						{getExtension(detail.imgSrc) == 'mp4'
+						{getExtension(detail.imgSrc) === 'mp4'
 							? <video className="w-full" autoPlay loop muted playsInline> 
 		            	<source src={detail.imgSrc} type="video/mp4" />
 		          	</video>
