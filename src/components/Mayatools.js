@@ -5,7 +5,7 @@ import Footer from './Footer.js';
 
 const details = [
   {
-    imgSrc: "mayatools/facify.gif", 
+    imgSrc: "mayatools/facify.mp4", 
     title: "Facify",
     subtitle: "Curve-based Eye/Mouth Autorigger",
     text: [
@@ -17,7 +17,7 @@ const details = [
 		linkLabel: "GitHub"
 	},
   {
-    imgSrc: "mayatools/splinify.gif", 
+    imgSrc: "mayatools/splinify.mp4", 
     title: "Splinify",
     subtitle: "Squash-and-Stretch + Spline IK Autorigger",
     text: [
@@ -29,7 +29,7 @@ const details = [
 		linkLabel: "GitHub"
   },
   {
-    imgSrc: "mayatools/bendify.gif", 
+    imgSrc: "mayatools/bendify.mp4", 
     title: "Bendify",
     subtitle: "Bendy Bone Autorigger",
     text: [
@@ -41,7 +41,7 @@ const details = [
 		linkLabel: "GitHub"
   },
   {
-    imgSrc: "mayatools/kinematify.gif", 
+    imgSrc: "mayatools/kinematify.mp4", 
     title: "Kinematify",
     subtitle: "IK/FK Blend System Autorigger",
     text: [
