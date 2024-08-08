@@ -57,7 +57,7 @@ export default function Mah()
                   src="https://www.youtube.com/embed/wBT7RxdP9wM" 
                   title="[Official] Open Beta: Mighty Road | Mighty Action Heroes" 
                   frameBorder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   referrerPolicy="strict-origin-when-cross-origin" 
                   allowFullScreen>
                 </iframe>
