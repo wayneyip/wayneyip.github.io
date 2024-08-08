@@ -7,7 +7,7 @@ export default function DetailWithLink({ imgSrc, imgAlt, title, subtitle, text, 
 {
   return (
     <div className="flex flex-col md:flex-row mb-12">
-      {getExtension(imgSrc) == 'mp4'
+      {getExtension(imgSrc) === 'mp4'
         ? <video className="w-full md:w-2/3 md:pr-10 pb-4 md:pb-0" autoPlay loop muted playsInline> 
             <source src={imgSrc} type="video/mp4" />
           </video>
