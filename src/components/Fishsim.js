@@ -29,9 +29,9 @@ const boidsDetails = [
 
 const shaderDetails = [
   {
-    imgSrc: "fishsim/fish.mp4", 
-    title: "Fish Shader with Caustic Projections",
-    text: "To emulate caustic lighting, the fish shader samples a noise texture in world space. Also, each fish is assigned a different offset for its sine wave animation, so that they don't swim in sync."            
+    imgSrc: "fishsim/godrays.mp4", 
+    title: "Low-Cost God Rays Shader",
+    text: "These hundreds of god rays are actually just a single cone mesh. Its shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
   },
   {
     imgSrc: "fishsim/surface.mp4", 
@@ -39,14 +39,14 @@ const shaderDetails = [
     text: "Using two samples of a normal map and some math tricks, I created a water surface that faces downwards but picks up specular highlights from the directional light above."    
   },
   {
-    imgSrc: "fishsim/godrays.mp4", 
-    title: "Low-Cost God Rays Shader",
-    text: "I derived a way to fake god rays with a simple cone mesh. The shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
+    imgSrc: "fishsim/fish.mp4", 
+    title: "Fish Shader with Caustic Projections",
+    text: "To emulate caustic lighting, the fish shader samples a Voronoi texture in world space. Also, each fish is assigned a different offset for its sine wave animation, so that they don't swim in sync."            
   },
   {
-    imgSrc: "fishsim/godrays.mp4", 
+    imgSrc: "fishsim/ground.mp4", 
     title: "Ground Shader with Caustic Projections",
-    text: "I derived a way to fake god rays with a simple cone mesh. The shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
+    text: "The ground uses the same Voronoi texture as the fish, sampling it twice at different UV scales and grabbing the minimum value to produce this organic shifting effect."    
   },
 ]
 
@@ -86,7 +86,7 @@ export default function Fishsim()
                 </a>
               </div>
             <DetailsGroup groupName="Boids with Ray Avoidance" details={boidsDetails} />
-            <DetailsGroup groupName="Boids with Ray Avoidance" details={shaderDetails} />
+            <DetailsGroup groupName="Custom GLSL Shaders" details={shaderDetails} />
           </div>
         </div>
       <BackToHome />
