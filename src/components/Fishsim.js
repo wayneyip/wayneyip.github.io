@@ -1,18 +1,37 @@
 import Navbar from './Navbar.js';
+import DetailsGroup from './DetailsGroup.js';
 import Detail from './Detail.js';
 import BackToHome from './BackToHome.js';
 import Footer from './Footer.js';
 
-const details = [
+const boidsDetails = [
   {
     imgSrc: "fishsim/rayavoid.mp4", 
-    title: "Boids with Ray Avoidance",
-    text: "Each fish's movement is simulated using the boids flocking algorithm. I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+    title: "Boids Procedural Animation",
+    text: "Each fish is procedurally animated via the boids flocking algorithm, always trying to swim together in a school. They also respond to user input (mouse, pen or touch)."    
   },
   {
-    imgSrc: "fishsim/fish.mp4", 
-    title: "Fish Shader with Caustic Projections",
-    text: "To emulate caustic lighting, the fish shader samples a noise texture in world space. Also, each fish is assigned a different offset for its sine wave animation, so that they don't swim in sync."            
+    imgSrc: "fishsim/rayavoid_code.jpg", 
+    title: "Ray Avoidance",
+    text: "I derived my own vector math solution for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+  },
+  {
+    imgSrc: "fishsim/rayavoid_vectors.jpg", 
+    title: "Breakdown: Vector Setup",
+    text: "This is a top-down view of the 3D vectors at play, with the mouse casting a ray into the screen. (\"Mouse\" is a shorthand here for PointerEvent, which also supports pen and touch input.)"
+  },
+  {
+    imgSrc: "fishsim/rayavoid_dot.jpg", 
+    title: "Breakdown: Dot Product",
+    text: "If the boid is facing the mouse (and near the mouse), I add a vector to the boid's velocity to steer it away -- in this case, in the direction of negative d."    
+  },
+]
+
+const shaderDetails = [
+  {
+    imgSrc: "fishsim/godrays.mp4", 
+    title: "Optimized Sunbeams Shader",
+    text: "These dozens of sunbeams are actually just a single cone mesh. Its shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
   },
   {
     imgSrc: "fishsim/surface.mp4", 
@@ -20,9 +39,14 @@ const details = [
     text: "Using two samples of a normal map and some math tricks, I created a water surface that faces downwards but picks up specular highlights from the directional light above."    
   },
   {
-    imgSrc: "fishsim/godrays.mp4", 
-    title: "Low-Cost God Rays Shader",
-    text: "I derived a way to fake god rays with a simple cone mesh. The shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
+    imgSrc: "fishsim/fish.mp4", 
+    title: "Fish Shader with Caustic Projections",
+    text: "To emulate caustic lighting, the fish shader samples a Voronoi texture in world space. Also, each fish is assigned a different offset for its sine wave animation, so that they don't swim in sync."            
+  },
+  {
+    imgSrc: "fishsim/ground.mp4", 
+    title: "Ground Shader with Caustic Projections",
+    text: "The ground uses the same Voronoi texture as the fish, scrolling it at two different speeds and scales and then taking the minimum value, resulting in the shifting caustics effect."    
   },
 ]
 
@@ -41,7 +65,7 @@ export default function Fishsim()
                 <p><span className="font-medium">Role:</span> Solo Developer</p>
                 <p><span className="font-medium">Tech:</span> Three.js, GLSL, Node.js, Vite, Vercel</p>
                 <br/>
-                <p>An interactive fish simulation that runs on the browser. Supports desktop, mobile and tablet devices for mouse and touch input.</p>
+                <p>An Three.js fish simulation with many custom GLSL shaders. Supports desktop, mobile and tablet devices for mouse and touch input.</p>
                 <br/>
                 <p>I built this to apply my initial learnings from Three.js Journey, the comprehensive 93-hour course by Bruno Simon.</p>
                 <br/>
@@ -61,9 +85,8 @@ export default function Fishsim()
                   GitHub
                 </a>
               </div>
-            {details.map((detail, index) => (
-              <Detail key={index} imgSrc={detail.imgSrc} title={detail.title} text={detail.text} />
-            ))}
+            <DetailsGroup groupName="Boids with Ray Avoidance" details={boidsDetails} />
+            <DetailsGroup groupName="Custom GLSL Shaders" details={shaderDetails} />
           </div>
         </div>
       <BackToHome />
