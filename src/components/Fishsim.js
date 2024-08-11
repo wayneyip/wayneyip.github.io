@@ -13,15 +13,15 @@ const boidsDetails = [
   {
     imgSrc: "fishsim/rayavoid_code.jpg", 
     title: "Ray Avoidance",
-    text: "I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+    text: "I derived my own vector math solution for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
   },
   {
     imgSrc: "fishsim/rayavoid_vectors.jpg", 
     title: "Breakdown: Vector Setup",
-    text: "This is a top-down view of the 3D vectors at play, with the mouse casting a ray into the screen. (Mouse is a shorthand here for PointerEvent, which also supports pen and touch input.)"
+    text: "This is a top-down view of the 3D vectors at play, with the mouse casting a ray into the screen. (\"Mouse\" is a shorthand here for PointerEvent, which also supports pen and touch input.)"
   },
   {
-    imgSrc: "fishsim/rayavoid_vectors.jpg", 
+    imgSrc: "fishsim/rayavoid_dot.jpg", 
     title: "Breakdown: Dot Product",
     text: "If the boid is facing the mouse (and near the mouse), I add a vector to the boid's velocity to steer it away -- in this case, in the direction of negative d."    
   },
@@ -65,7 +65,7 @@ export default function Fishsim()
                 <p><span className="font-medium">Role:</span> Solo Developer</p>
                 <p><span className="font-medium">Tech:</span> Three.js, GLSL, Node.js, Vite, Vercel</p>
                 <br/>
-                <p>An interactive fish simulation that runs on the browser. Supports desktop, mobile and tablet devices for mouse and touch input.</p>
+                <p>An Three.js fish simulation with many custom GLSL shaders. Supports desktop, mobile and tablet devices for mouse and touch input.</p>
                 <br/>
                 <p>I built this to apply my initial learnings from Three.js Journey, the comprehensive 93-hour course by Bruno Simon.</p>
                 <br/>
