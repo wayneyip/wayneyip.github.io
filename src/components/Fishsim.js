@@ -31,7 +31,7 @@ const shaderDetails = [
   {
     imgSrc: "fishsim/godrays.mp4", 
     title: "Optimized Sunbeams Shader",
-    text: "These hundreds of sunbeams are actually just a single cone mesh. Its shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
+    text: "These dozens of sunbeams are actually just a single cone mesh. Its shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
   },
   {
     imgSrc: "fishsim/surface.mp4", 
