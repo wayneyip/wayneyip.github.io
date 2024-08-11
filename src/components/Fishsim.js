@@ -1,14 +1,33 @@
 import Navbar from './Navbar.js';
+import DetailsGroup from './DetailsGroup.js';
 import Detail from './Detail.js';
 import BackToHome from './BackToHome.js';
 import Footer from './Footer.js';
 
-const details = [
+const boidsDetails = [
   {
     imgSrc: "fishsim/rayavoid.mp4", 
-    title: "Boids with Ray Avoidance",
-    text: "Each fish's movement is simulated using the boids flocking algorithm. I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+    title: "Boids Simulation",
+    text: "Each fish is procedurally animated via the boids flocking algorithm, based on the three principles: cohesion, alignment and separation."    
   },
+  {
+    imgSrc: "fishsim/rayavoid.mp4", 
+    title: "Ray Avoidance",
+    text: "I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+  },
+  {
+    imgSrc: "fishsim/rayavoid.mp4", 
+    title: "Vector Math: Ray Approach",
+    text: "I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+  },
+  {
+    imgSrc: "fishsim/rayavoid.mp4", 
+    title: "Vector Math: Ray Avoidance",
+    text: "I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+  },
+]
+
+const shaderDetails = [
   {
     imgSrc: "fishsim/fish.mp4", 
     title: "Fish Shader with Caustic Projections",
@@ -22,6 +41,11 @@ const details = [
   {
     imgSrc: "fishsim/godrays.mp4", 
     title: "Low-Cost God Rays Shader",
+    text: "I derived a way to fake god rays with a simple cone mesh. The shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
+  },
+  {
+    imgSrc: "fishsim/godrays.mp4", 
+    title: "Ground Shader with Caustic Projections",
     text: "I derived a way to fake god rays with a simple cone mesh. The shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
   },
 ]
@@ -61,9 +85,8 @@ export default function Fishsim()
                   GitHub
                 </a>
               </div>
-            {details.map((detail, index) => (
-              <Detail key={index} imgSrc={detail.imgSrc} title={detail.title} text={detail.text} />
-            ))}
+            <DetailsGroup groupName="Boids with Ray Avoidance" details={boidsDetails} />
+            <DetailsGroup groupName="Boids with Ray Avoidance" details={shaderDetails} />
           </div>
         </div>
       <BackToHome />
