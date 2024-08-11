@@ -7,23 +7,23 @@ import Footer from './Footer.js';
 const boidsDetails = [
   {
     imgSrc: "fishsim/rayavoid.mp4", 
-    title: "Boids Simulation",
-    text: "Each fish is procedurally animated via the boids flocking algorithm, based on the three principles: cohesion, alignment and separation."    
+    title: "Boids Procedural Animation",
+    text: "Each fish is procedurally animated via the boids flocking algorithm by Craig Reynolds, based on the principles of cohesion, alignment and separation."    
   },
   {
-    imgSrc: "fishsim/rayavoid.mp4", 
+    imgSrc: "fishsim/rayavoid_code.jpg", 
     title: "Ray Avoidance",
     text: "I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
   },
   {
-    imgSrc: "fishsim/rayavoid.mp4", 
-    title: "Vector Math: Ray Approach",
-    text: "I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+    imgSrc: "fishsim/rayavoid_vectors.jpg", 
+    title: "Breakdown: Vector Setup",
+    text: "This is a top-down view of the 3D vectors at play, with the mouse casting a ray into the screen. (Mouse is a shorthand here for PointerEvent, which also supports pen and touch input.)"
   },
   {
-    imgSrc: "fishsim/rayavoid.mp4", 
-    title: "Vector Math: Ray Avoidance",
-    text: "I derived my own vector math for boids to avoid the mouse's raycast, since ray avoidance is not a common feature in boids implementations."    
+    imgSrc: "fishsim/rayavoid_vectors.jpg", 
+    title: "Breakdown: Dot Product",
+    text: "If the boid is facing the mouse (and near the mouse), I add a vector to the boid's velocity to steer it away -- in this case, in the direction of negative d."    
   },
 ]
 
