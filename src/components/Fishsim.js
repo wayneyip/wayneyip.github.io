@@ -65,9 +65,9 @@ export default function Fishsim()
                 <p><span className="font-medium">Role:</span> Solo Developer</p>
                 <p><span className="font-medium">Tech:</span> Three.js, GLSL, Node.js, Vite, Vercel</p>
                 <br/>
-                <p>An Three.js fish simulation with many custom GLSL shaders. Supports desktop, mobile and tablet devices for mouse and touch input.</p>
+                <p>A Three.js fish simulation with many custom GLSL shaders. Supports desktop, mobile and tablet devices for mouse and touch input.</p>
                 <br/>
-                <p>I built this to apply my initial learnings from Three.js Journey, the comprehensive 93-hour course by Bruno Simon.</p>
+                <p>I built this to apply my initial learnings from Three.js Journey, the comprehensive 93-hour course by Bruno Simon on Three.js, GLSL and react-three-fiber.</p>
                 <br/>
                 <br/>
                 <a
