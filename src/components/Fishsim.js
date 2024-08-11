@@ -8,7 +8,7 @@ const boidsDetails = [
   {
     imgSrc: "fishsim/rayavoid.mp4", 
     title: "Boids Procedural Animation",
-    text: "Each fish is procedurally animated via the boids flocking algorithm by Craig Reynolds, based on the principles of cohesion, alignment and separation."    
+    text: "Each fish is procedurally animated via the boids flocking algorithm, always trying to swim together in a school. They also respond to user input (mouse, pen or touch)."    
   },
   {
     imgSrc: "fishsim/rayavoid_code.jpg", 
@@ -30,8 +30,8 @@ const boidsDetails = [
 const shaderDetails = [
   {
     imgSrc: "fishsim/godrays.mp4", 
-    title: "Low-Cost God Rays Shader",
-    text: "These hundreds of god rays are actually just a single cone mesh. Its shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
+    title: "Optimized Sunbeams Shader",
+    text: "These hundreds of sunbeams are actually just a single cone mesh. Its shader samples a noise texture in polar coordinates, with the offset being changed over time to create shifting beams."    
   },
   {
     imgSrc: "fishsim/surface.mp4", 
@@ -46,7 +46,7 @@ const shaderDetails = [
   {
     imgSrc: "fishsim/ground.mp4", 
     title: "Ground Shader with Caustic Projections",
-    text: "The ground uses the same Voronoi texture as the fish, sampling it twice at different UV scales and grabbing the minimum value to produce this organic shifting effect."    
+    text: "The ground uses the same Voronoi texture as the fish, scrolling it at two different speeds and scales and then taking the minimum value, resulting in the shifting caustics effect."    
   },
 ]
 
